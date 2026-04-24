@@ -5,109 +5,46 @@ function Footer() {
   return (
     <footer className="footer--container">
       <div className="footer--link--container">
+        <div>
+          <span className="navbar--logo-text">&lt;AN /&gt;</span>
+        </div>
         <div className="footer--items">
           <ul>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="heroSection"
-                className="text-md"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="MyPortfolio"
-                className="text-md"
-              >
-                Portfolio
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="AboutMe"
-                className="text-md"
-              >
-                About Me
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="Contact"
-                className="text-md"
-              >
-                Contact
-              </Link>
-            </li>
-            
+            {[
+              { label: "Home",     to: "heroSection" },
+              { label: "Skills",   to: "mySkills" },
+              { label: "About",    to: "AboutMe" },
+              { label: "Projects", to: "MyPortfolio" },
+              { label: "Blog",     to: "Blog" },
+              { label: "Contact",  to: "Contact" },
+            ].map(({ label, to }) => (
+              <li key={to}>
+                <Link spy smooth offset={-70} duration={500} to={to} className="text-md">
+                  {label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
-        
       </div>
 
       <hr className="divider" />
+
       <div className="footer--content--container">
-        
+        <p className="footer--content">
+          © {new Date().getFullYear()} Aryan Neopane — Built with React
+        </p>
         <div className="footer--social--icon">
           <ul>
             <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="Privacy_Policy"
-                className="text-sm"
-              >
-                Privacy Policy
-              </Link>
+              <a href="https://github.com/woooj02" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
             </li>
             <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="Terms_of_Service"
-                className="text-sm"
-              >
-                Terms of Service
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="Cookies_Settings"
-                className="text-sm"
-              >
-                Cookies Settings
-              </Link>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
             </li>
           </ul>
         </div>

@@ -3,49 +3,92 @@
     {
       "id": "1",
       "src": "./img/ai.png",
-      "title": "Machine Learning and Artificial Intelligence",
-      "description": "Leveraging cutting-edge technologies to develop intelligent systems that can analyze data, learn from it, and make informed decisions autonomously."
+      "title": "Machine Learning & AI",
+      "description": "Building intelligent systems using TensorFlow, PyTorch, and advanced ML techniques — from neural networks to autonomous decision-making."
     },
     {
       "id": "2",
       "src": "./img/software_engr.png",
       "title": "Software Engineering",
-      "description": "Crafting robust and scalable software solutions using industry best practices, innovative technologies, and efficient development methodologies to address complex challenges."
+      "description": "Crafting scalable, production-grade software in Python, C++, and JavaScript using best practices and efficient system design."
     },
     {
       "id": "3",
       "src": "./img/cyber_sec.png",
       "title": "Cybersecurity",
-      "description": " Implementing proactive measures and security protocols to safeguard digital assets, networks, and systems against cyber threats, ensuring data confidentiality, integrity, and availability."
+      "description": "Implementing proactive security protocols and threat analysis to protect systems, networks, and digital assets."
     },
     {
       "id": "4",
       "src": "./img/web_dev.png",
       "title": "Web Development",
-      "description": " Designing and developing dynamic and user-friendly web applications with modern technologies and frameworks to enhance online presence, engagement, and functionality."
+      "description": "Designing full-stack web applications with React, Django, and modern frameworks for seamless user experiences."
     }
   ],
   "portfolio": [
     {
       "id": "1",
       "src": "./img/mars_rover.png",
-      "title": "Mars Rover",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "title": "Mars Rover (LynxRover)",
+      "description": "Autonomous ground rover built for University Rover Challenge. Full ROS stack with navigation, arm control, and science module.",
+      "tags": ["ROS", "C++", "Python", "Autonomy"],
+      "github": "https://github.com/woooj02"
     },
     {
       "id": "2",
-      "src": "./img/placeholder-image-1.png",
-      "title": "Car Dealership",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "src": "./img/placeholder-image.png",
+      "title": "Sahayak",
+      "description": "React Native mobile application designed to assist users with smart, AI-powered features on Android and iOS.",
+      "tags": ["React Native", "JavaScript", "Mobile"],
+      "github": "https://github.com/woooj02"
     },
     {
       "id": "3",
+      "src": "./img/placeholder-image-1.png",
+      "title": "Smart Home Network",
+      "description": "IoT home automation system built on Arduino/ESP8266. Controls lighting, sensors, and appliances via a web interface.",
+      "tags": ["Arduino", "IoT", "C++", "ESP8266"],
+      "github": "https://github.com/woooj02"
+    },
+    {
+      "id": "4",
       "src": "./img/placeholder-image-2.png",
-      "title": "Battleship",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "title": "Web Page Rank",
+      "description": "Network analysis tool implementing PageRank algorithm on the Stanford web graph. Visualizes community structure and node importance.",
+      "tags": ["Python", "NetworkX", "ML", "Data"],
+      "github": "https://github.com/woooj02"
+    },
+    {
+      "id": "5",
+      "src": "./img/placeholder-image.png",
+      "title": "ArUco Detection",
+      "description": "Real-time ArUco marker detection and pose estimation using OpenCV and DepthAI — deployed on rover for autonomous navigation.",
+      "tags": ["OpenCV", "Python", "DepthAI", "Computer Vision"],
+      "github": "https://github.com/woooj02"
+    },
+    {
+      "id": "6",
+      "src": "./img/placeholder-image-1.png",
+      "title": "DAI Workspace",
+      "description": "Deep AI integration workspace — a collection of ML pipelines and AI-driven automation tools built for real-world deployment.",
+      "tags": ["PyTorch", "TensorFlow", "Python", "AI"],
+      "github": "https://github.com/woooj02"
+    },
+    {
+      "id": "7",
+      "src": "./img/placeholder-image-2.png",
+      "title": "Car Dealership App",
+      "description": "Full-stack car dealership web application with inventory management, search filters, and user authentication.",
+      "tags": ["React", "Django", "SQL", "Web"],
+      "github": "https://github.com/woooj02"
+    },
+    {
+      "id": "8",
+      "src": "./img/placeholder-image.png",
+      "title": "Battleship Game",
+      "description": "Classic Battleship game built with modern web technologies, featuring AI opponent and real-time multiplayer support.",
+      "tags": ["JavaScript", "HTML", "CSS", "Game"],
+      "github": "https://github.com/woooj02"
     }
   ]
 }

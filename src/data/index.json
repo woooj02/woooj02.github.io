@@ -23,9 +23,23 @@
       "src": "./img/web_dev.png",
       "title": "Web Development",
       "description": "Designing full-stack web applications with React, Django, and modern frameworks for seamless user experiences."
+    },
+    {
+      "id": "5",
+      "src": "./img/software_engr.png",
+      "title": "Data Analytics",
+      "description": "Turning raw data into decisions with SQL, Python (Pandas, NumPy), Tableau, and Power BI — building ETL pipelines, statistical analyses, and interactive dashboards."
     }
   ],
   "portfolio": [
+    {
+      "id": "11",
+      "src": "./img/placeholder-image-1.png",
+      "title": "Lumen — Automated Data Analysis Dashboard",
+      "description": "No-code analytics platform: upload any dataset and instantly get KPIs, plain-English insights, and auto-generated charts, plus Isolation Forest anomaly/fraud detection that flags unusual records. Includes a SQL query sandbox, AutoML predictions on leak-free scikit-learn pipelines, and one-click HTML reporting. Built with Streamlit, pandas, Plotly, and scikit-learn.",
+      "tags": ["Python", "Streamlit", "scikit-learn", "Pandas", "Plotly", "SQL"],
+      "github": "https://github.com/woooj02/Lumen"
+    },
     {
       "id": "1",
       "src": "./img/mars_rover.png",
@@ -38,12 +52,27 @@
       "id": "2",
       "src": "./img/placeholder-image.png",
       "title": "Sahayak",
-      "description": "React Native mobile application designed to assist users with smart, AI-powered features on Android and iOS.",
-      "tags": ["React Native", "JavaScript", "Mobile"],
-      "github": "https://github.com/woooj02"
+      "description": "Personal wellness web app — daily journal, task manager, weight tracking, and AI companion chat. Multi-user, session-auth, full-stack React + Express + SQLite. Currently being developed as a commercial SaaS product.",
+      "tags": ["React", "Node.js", "SQLite", "AI"]
     },
     {
       "id": "3",
+      "src": "./img/placeholder-image-1.png",
+      "title": "Supply Chain Analytics Platform",
+      "description": "Production-grade real-time supply chain analytics with anomaly detection, demand forecasting, and an interactive Plotly Dash dashboard. Multi-source ETL, ARIMA + ML ensemble forecasting, PostgreSQL time-series storage, Redis caching, multi-channel alerting.",
+      "tags": ["Python", "PostgreSQL", "Dash", "scikit-learn"],
+      "github": "https://github.com/woooj02/supply-chain-analytics"
+    },
+    {
+      "id": "4",
+      "src": "./img/placeholder-image-2.png",
+      "title": "TaskForge Platform",
+      "description": "Cloud-native distributed task orchestration platform — gRPC microservices, Kubernetes deployment, Prometheus observability. Built for high-throughput async workflows with retry semantics and protocol-buffer contracts.",
+      "tags": ["gRPC", "Kubernetes", "Prometheus", "Microservices"],
+      "github": "https://github.com/woooj02/taskforge-platform"
+    },
+    {
+      "id": "5",
       "src": "./img/placeholder-image-1.png",
       "title": "Smart Home Network",
       "description": "IoT home automation system built on Arduino/ESP8266. Controls lighting, sensors, and appliances via a web interface.",
@@ -51,7 +80,7 @@
       "github": "https://github.com/woooj02"
     },
     {
-      "id": "4",
+      "id": "6",
       "src": "./img/placeholder-image-2.png",
       "title": "Web Page Rank",
       "description": "Network analysis tool implementing PageRank algorithm on the Stanford web graph. Visualizes community structure and node importance.",
@@ -59,7 +88,7 @@
       "github": "https://github.com/woooj02"
     },
     {
-      "id": "5",
+      "id": "7",
       "src": "./img/placeholder-image.png",
       "title": "ArUco Detection",
       "description": "Real-time ArUco marker detection and pose estimation using OpenCV and DepthAI — deployed on rover for autonomous navigation.",
@@ -67,7 +96,7 @@
       "github": "https://github.com/woooj02"
     },
     {
-      "id": "6",
+      "id": "8",
       "src": "./img/placeholder-image-1.png",
       "title": "DAI Workspace",
       "description": "Deep AI integration workspace — a collection of ML pipelines and AI-driven automation tools built for real-world deployment.",
@@ -75,7 +104,7 @@
       "github": "https://github.com/woooj02"
     },
     {
-      "id": "7",
+      "id": "9",
       "src": "./img/placeholder-image-2.png",
       "title": "Car Dealership App",
       "description": "Full-stack car dealership web application with inventory management, search filters, and user authentication.",
@@ -83,7 +112,7 @@
       "github": "https://github.com/woooj02"
     },
     {
-      "id": "8",
+      "id": "10",
       "src": "./img/placeholder-image.png",
       "title": "Battleship Game",
       "description": "Classic Battleship game built with modern web technologies, featuring AI opponent and real-time multiplayer support.",

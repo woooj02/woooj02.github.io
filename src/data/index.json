@@ -1,123 +1,117 @@
 {
-  "skills": [
+  "featured": [
     {
-      "id": "1",
-      "src": "./img/ai.png",
-      "title": "Machine Learning & AI",
-      "description": "Building intelligent systems using TensorFlow, PyTorch, and advanced ML techniques — from neural networks to autonomous decision-making."
+      "id": "job-agent",
+      "kicker": "Production AI · 12+ months unattended",
+      "title": "Autonomous Job Application Agent",
+      "description": "A Python agent harness integrating Anthropic Claude and Google Gemini that has run unattended on a cloud Linux VPS for over a year. Multi-stage LLM decision logic with tool selection and chaining, fallback strategies, hard-rejection guardrails, and retry logic. RAG-style retrieval injects structured context into prompts; outputs are validated as structured JSON against multi-criteria checks, with severity-routed alerting and end-of-run metrics.",
+      "tags": ["Python", "Claude", "Gemini", "SQLite", "Pydantic", "Linux VPS", "cron"],
+      "github": "https://github.com/woooj02/job-agent"
     },
     {
-      "id": "2",
-      "src": "./img/software_engr.png",
-      "title": "Software Engineering",
-      "description": "Crafting scalable, production-grade software in Python, C++, and JavaScript using best practices and efficient system design."
+      "id": "shayaak",
+      "kicker": "Live product · shayaak.com",
+      "title": "Shayaak — Wellness Web App",
+      "description": "A full-stack wellness app: daily journal, task manager, weight tracking, and Saya — an AI companion powered by a self-hosted Llama 3.2 model running on the same box via Ollama. Multi-user with session auth, React front end, Express + SQLite back end. I run the whole stack myself on a Hetzner VPS: nginx, SSL, systemd services, git-based deploys, and nightly database backups.",
+      "tags": ["React", "Node.js", "Express", "SQLite", "Ollama", "nginx", "systemd"],
+      "live": "https://shayaak.com"
     },
     {
-      "id": "3",
-      "src": "./img/cyber_sec.png",
-      "title": "Cybersecurity",
-      "description": "Implementing proactive security protocols and threat analysis to protect systems, networks, and digital assets."
-    },
-    {
-      "id": "4",
-      "src": "./img/web_dev.png",
-      "title": "Web Development",
-      "description": "Designing full-stack web applications with React, Django, and modern frameworks for seamless user experiences."
-    },
-    {
-      "id": "5",
-      "src": "./img/software_engr.png",
-      "title": "Data Analytics",
-      "description": "Turning raw data into decisions with SQL, Python (Pandas, NumPy), Tableau, and Power BI — building ETL pipelines, statistical analyses, and interactive dashboards."
+      "id": "lumen",
+      "kicker": "Data analysis · 10/10 tests passing",
+      "title": "Lumen — Automated Data-Analysis Dashboard",
+      "description": "Upload any dataset and get a dashboard: KPIs, plain-English insights, auto-generated charts, and dataset-agnostic anomaly detection with scikit-learn Isolation Forest. Includes a SQL query sandbox, a leak-free AutoML pipeline (Pipeline + ColumnTransformer, cross-validated), and one-click HTML reporting. Pure-function analysis engine with full pytest coverage; cleaning workflows export as runnable pandas code.",
+      "tags": ["Python", "Streamlit", "scikit-learn", "Pandas", "Plotly", "pytest"],
+      "github": "https://github.com/woooj02/Lumen"
     }
   ],
   "portfolio": [
     {
-      "id": "11",
-      "src": "./img/placeholder-image-1.png",
-      "title": "Lumen — Automated Data Analysis Dashboard",
-      "description": "No-code analytics platform: upload any dataset and instantly get KPIs, plain-English insights, and auto-generated charts, plus Isolation Forest anomaly/fraud detection that flags unusual records. Includes a SQL query sandbox, AutoML predictions on leak-free scikit-learn pipelines, and one-click HTML reporting. Built with Streamlit, pandas, Plotly, and scikit-learn.",
-      "tags": ["Python", "Streamlit", "scikit-learn", "Pandas", "Plotly", "SQL"],
-      "github": "https://github.com/woooj02/Lumen"
+      "id": "youtube-agent",
+      "title": "Multi-Channel YouTube Content Agent",
+      "description": "Config-driven Python framework producing tonally distinct video content across 4 production channels — research, script, voice-over, and render orchestrated across 5+ external services, published on a staggered cron schedule. Private repo; running in production.",
+      "tags": ["Python", "Gemini", "Edge TTS", "ffmpeg", "YouTube API", "OAuth"]
     },
     {
-      "id": "1",
-      "src": "./img/mars_rover.png",
-      "title": "Mars Rover (LynxRover)",
-      "description": "Autonomous ground rover built for University Rover Challenge. Full ROS stack with navigation, arm control, and science module.",
-      "tags": ["ROS", "C++", "Python", "Autonomy"],
-      "github": "https://github.com/woooj02"
-    },
-    {
-      "id": "2",
-      "src": "./img/placeholder-image.png",
-      "title": "Sahayak",
-      "description": "Personal wellness web app — daily journal, task manager, weight tracking, and AI companion chat. Multi-user, session-auth, full-stack React + Express + SQLite. Currently being developed as a commercial SaaS product.",
-      "tags": ["React", "Node.js", "SQLite", "AI"]
-    },
-    {
-      "id": "3",
-      "src": "./img/placeholder-image-1.png",
+      "id": "supply-chain",
       "title": "Supply Chain Analytics Platform",
-      "description": "Production-grade real-time supply chain analytics with anomaly detection, demand forecasting, and an interactive Plotly Dash dashboard. Multi-source ETL, ARIMA + ML ensemble forecasting, PostgreSQL time-series storage, Redis caching, multi-channel alerting.",
-      "tags": ["Python", "PostgreSQL", "Dash", "scikit-learn"],
+      "description": "Real-time ETL processing 5,000+ transactions with Pydantic validation and retry logic. Ensemble anomaly detection (Z-score, IQR, Isolation Forest, Elliptic Envelope) with severity-routed Slack/Email alerting, Holt-Winters/ARIMA forecasting validated against holdouts, and a 6-page Plotly Dash dashboard.",
+      "tags": ["Python", "PostgreSQL", "Redis", "Plotly Dash", "scikit-learn"],
       "github": "https://github.com/woooj02/supply-chain-analytics"
     },
     {
-      "id": "4",
-      "src": "./img/placeholder-image-2.png",
-      "title": "TaskForge Platform",
-      "description": "Cloud-native distributed task orchestration platform — gRPC microservices, Kubernetes deployment, Prometheus observability. Built for high-throughput async workflows with retry semantics and protocol-buffer contracts.",
-      "tags": ["gRPC", "Kubernetes", "Prometheus", "Microservices"],
+      "id": "taskforge",
+      "title": "TaskForge — Distributed Task Orchestration",
+      "description": "Cloud-native task orchestration platform: gRPC microservices, Kafka event streaming, event sourcing with CQRS and saga patterns, Kubernetes deployment with HPA autoscaling, and OpenTelemetry + Prometheus observability.",
+      "tags": ["Python", "gRPC", "Kafka", "Kubernetes", "PostgreSQL", "OpenTelemetry"],
       "github": "https://github.com/woooj02/taskforge-platform"
     },
     {
-      "id": "5",
-      "src": "./img/placeholder-image-1.png",
+      "id": "resume-tailor",
+      "title": "Resume Tailor",
+      "description": "Local-first resume and cover letter generator: paste a job description and a locally hosted LLM (Ollama) tailors ATS-friendly PDFs. No cloud APIs — everything runs on my own machine.",
+      "tags": ["Python", "Ollama", "LLM", "PDF generation"],
+      "github": "https://github.com/woooj02/resume-tailor"
+    },
+    {
+      "id": "mars-rover",
+      "title": "Mars Rover — University Rover Challenge",
+      "description": "Led the CS team through the full lifecycle: requirements, design, embedded C++ for sensor subsystems over UART/SPI/I2C, and hardware/software debugging with logic analyzers and gdb. MATLAB/Simulink models validated that physical hardware matched simulated response.",
+      "tags": ["C++", "ROS2", "UART/SPI/I2C", "MATLAB", "Embedded"]
+    },
+    {
+      "id": "smart-home",
       "title": "Smart Home Network",
-      "description": "IoT home automation system built on Arduino/ESP8266. Controls lighting, sensors, and appliances via a web interface.",
-      "tags": ["Arduino", "IoT", "C++", "ESP8266"],
-      "github": "https://github.com/woooj02"
+      "description": "IoT home automation on Arduino/ESP8266 — lighting, sensors, and appliances controlled through a web interface.",
+      "tags": ["C++", "Arduino", "ESP8266", "IoT"],
+      "github": "https://github.com/woooj02/Smart-Home-Network"
     },
     {
-      "id": "6",
-      "src": "./img/placeholder-image-2.png",
+      "id": "battleship",
+      "title": "Battleship (C++)",
+      "description": "Classic Battleship built in modern C++ with an object-oriented design and CSV-based game persistence.",
+      "tags": ["C++", "OOP", "STL"],
+      "github": "https://github.com/woooj02/Battleship"
+    },
+    {
+      "id": "web-page-rank",
       "title": "Web Page Rank",
-      "description": "Network analysis tool implementing PageRank algorithm on the Stanford web graph. Visualizes community structure and node importance.",
-      "tags": ["Python", "NetworkX", "ML", "Data"],
-      "github": "https://github.com/woooj02"
+      "description": "PageRank implemented and optimized over the Stanford web graph (~280K nodes) using NetworkX and sparse matrix operations, with visualizations of community structure and node importance.",
+      "tags": ["Python", "NetworkX", "Graph Analysis"]
+    }
+  ],
+  "skillGroups": [
+    {
+      "label": "Languages",
+      "items": ["Python", "C++", "TypeScript / JavaScript", "SQL", "Bash"]
     },
     {
-      "id": "7",
-      "src": "./img/placeholder-image.png",
-      "title": "ArUco Detection",
-      "description": "Real-time ArUco marker detection and pose estimation using OpenCV and DepthAI — deployed on rover for autonomous navigation.",
-      "tags": ["OpenCV", "Python", "DepthAI", "Computer Vision"],
-      "github": "https://github.com/woooj02"
+      "label": "AI & LLM Systems",
+      "items": ["Claude API", "Gemini API", "Agent orchestration", "Tool calling", "RAG retrieval", "Prompt engineering", "Structured output validation", "Ollama (self-hosted)"]
     },
     {
-      "id": "8",
-      "src": "./img/placeholder-image-1.png",
-      "title": "DAI Workspace",
-      "description": "Deep AI integration workspace — a collection of ML pipelines and AI-driven automation tools built for real-world deployment.",
-      "tags": ["PyTorch", "TensorFlow", "Python", "AI"],
-      "github": "https://github.com/woooj02"
+      "label": "Data Engineering",
+      "items": ["ETL pipelines", "PostgreSQL", "SQLite", "Redis", "Pandas", "NumPy", "Pydantic", "SQLAlchemy"]
     },
     {
-      "id": "9",
-      "src": "./img/placeholder-image-2.png",
-      "title": "Car Dealership App",
-      "description": "Full-stack car dealership web application with inventory management, search filters, and user authentication.",
-      "tags": ["React", "Django", "SQL", "Web"],
-      "github": "https://github.com/woooj02"
+      "label": "ML & Analytics",
+      "items": ["scikit-learn", "PyTorch", "TensorFlow", "OpenCV", "Anomaly detection", "Time-series forecasting", "Statistical modeling"]
     },
     {
-      "id": "10",
-      "src": "./img/placeholder-image.png",
-      "title": "Battleship Game",
-      "description": "Classic Battleship game built with modern web technologies, featuring AI opponent and real-time multiplayer support.",
-      "tags": ["JavaScript", "HTML", "CSS", "Game"],
-      "github": "https://github.com/woooj02"
+      "label": "Cloud & DevOps",
+      "items": ["Linux (daily driver)", "Docker", "Kubernetes", "GitHub Actions", "nginx", "systemd", "cron", "AWS", "GCP"]
+    },
+    {
+      "label": "Visualization & BI",
+      "items": ["Plotly Dash", "Streamlit", "Tableau", "Power BI", "matplotlib"]
+    },
+    {
+      "label": "Embedded & Hardware",
+      "items": ["Arduino", "ESP32", "UART / SPI / I2C", "ROS2", "Logic analyzers", "gdb"]
+    },
+    {
+      "label": "Security",
+      "items": ["Secure SDLC", "OWASP Top 10", "OAuth 2.0", "TLS / HTTPS", "Cybersecurity certificate (UCD)"]
     }
   ]
 }

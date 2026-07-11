@@ -1,0 +1,9 @@
+[
+  {
+    "slug": "blog-without-a-backend",
+    "title": "A Blog With No Backend: Markdown, React, and GitHub Pages",
+    "date": "July 2026",
+    "tag": "Web",
+    "summary": "How this blog works: posts are markdown files in the site's git repo, rendered client-side. There's no CMS, no database, and no auth system — and yet only I can publish, because publishing is a git push."
+  }
+]

@@ -8,10 +8,10 @@ Each post is a plain markdown file in the repo, under `public/posts/`. A small `
 
 The React side does two things:
 
-- The **blog section** on the home page fetches `index.json` and renders a card per entry. If the manifest is empty, the section doesn't render at all.
-- A **post route** (`/#/blog/<slug>`) looks the slug up in the manifest, fetches the matching `.md` file, and renders it to HTML with [marked](https://github.com/markedjs/marked).
+- The **blog page** fetches `index.json` and renders a card per entry.
+- A **post route** (`/blog/<slug>`) looks the slug up in the manifest, fetches the matching `.md` file, and renders it to HTML with [marked](https://github.com/markedjs/marked).
 
-Routing uses a hash router because GitHub Pages serves a static file tree — there's no server-side rewrite to catch `/blog/foo` and hand it to the app, but everything after `#` never leaves the browser.
+One wrinkle: GitHub Pages serves a static file tree, so there's no server-side rewrite to catch `/blog/foo` and hand it to the app — a direct visit would 404. The standard workaround is to ship a `404.html` that is a copy of `index.html`; Pages serves it for any unknown path, the React app boots, and the client-side router takes over from the URL. One `cp` in a postbuild script buys clean URLs.
 
 ## Why "only I can write" needs no auth code
 

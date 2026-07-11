@@ -34,7 +34,7 @@ export default function BlogPost() {
     return (
       <main className="post--page">
         <p className="post--notfound">Post not found.</p>
-        <Link to="/" className="card--link">← Back home</Link>
+        <Link to="/blog" className="card--link">← All posts</Link>
       </main>
     );
   }
@@ -54,7 +54,7 @@ export default function BlogPost() {
         <article className="post--body" dangerouslySetInnerHTML={{ __html: html }} />
       )}
       <footer className="post--footer">
-        <Link to="/" className="card--link">← Back home</Link>
+        <Link to="/blog" className="card--link">← All posts</Link>
       </footer>
     </main>
   );

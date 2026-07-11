@@ -19,9 +19,9 @@ Only you can publish, because publishing = pushing to this repo.
 
    The `slug` must match the filename (without `.md`).
 
-3. Preview locally: `nvm use 20 && npm start`, then open http://localhost:3000
+3. Preview locally: `nvm use 20 && npm start`, then open http://localhost:3000/blog
 
 4. Publish: commit + push, then `npm run deploy`
 
-The post appears at `https://woooj02.github.io/#/blog/my-post-slug`.
+The post appears at `https://woooj02.github.io/blog/my-post-slug`.
 This file (HOW_TO_POST.md) is not listed in index.json, so it never shows on the site.

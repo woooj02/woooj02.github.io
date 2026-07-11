@@ -1,19 +1,16 @@
 import { useState, useEffect } from "react";
-import { Link as ScrollLink } from "react-scroll";
-import { Link as RouteLink, useLocation } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const navLinks = [
-  { label: "Work", to: "work" },
-  { label: "About", to: "about" },
-  { label: "Blog", to: "blog" },
-  { label: "Contact", to: "contact" },
+  { label: "Projects", to: "/projects" },
+  { label: "About", to: "/about" },
+  { label: "Blog", to: "/blog" },
+  { label: "Contact", to: "/contact" },
 ];
 
 function Navbar() {
   const [navActive, setNavActive] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const location = useLocation();
-  const onHome = location.pathname === "/";
 
   const closeMenu = () => setNavActive(false);
 
@@ -31,9 +28,9 @@ function Navbar() {
 
   return (
     <nav className={`navbar ${scrolled ? "navbar--scrolled" : ""}`}>
-      <RouteLink to="/" className="navbar--logo" onClick={closeMenu}>
+      <Link to="/" className="navbar--logo" onClick={closeMenu}>
         aryan<span className="navbar--logo-accent">.neopane</span>
-      </RouteLink>
+      </Link>
 
       <button
         className={`nav__hamburger ${navActive ? "active" : ""}`}
@@ -49,24 +46,15 @@ function Navbar() {
         <ul>
           {navLinks.map(({ label, to }) => (
             <li key={to}>
-              {onHome ? (
-                <ScrollLink
-                  onClick={closeMenu}
-                  spy={true}
-                  smooth={true}
-                  offset={-80}
-                  duration={400}
-                  to={to}
-                  className="navbar--content"
-                  activeClass="navbar--active-content"
-                >
-                  {label}
-                </ScrollLink>
-              ) : (
-                <RouteLink to="/" state={{ scrollTo: to }} className="navbar--content" onClick={closeMenu}>
-                  {label}
-                </RouteLink>
-              )}
+              <NavLink
+                to={to}
+                onClick={closeMenu}
+                className={({ isActive }) =>
+                  `navbar--content ${isActive ? "navbar--active-content" : ""}`
+                }
+              >
+                {label}
+              </NavLink>
             </li>
           ))}
           <li>

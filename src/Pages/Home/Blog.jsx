@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // Posts live in public/posts/ as markdown files, listed in public/posts/index.json.
 // Publishing requires push access to this repo — see public/posts/HOW_TO_POST.md.
 export default function Blog() {
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState(null);
 
   useEffect(() => {
     fetch(`${process.env.PUBLIC_URL}/posts/index.json`)
@@ -12,8 +12,6 @@ export default function Blog() {
       .then((list) => setPosts(Array.isArray(list) ? list : []))
       .catch(() => setPosts([]));
   }, []);
-
-  if (posts.length === 0) return null;
 
   return (
     <section id="blog" className="blog--section">
@@ -25,8 +23,12 @@ export default function Blog() {
         </p>
       </div>
 
+      {posts && posts.length === 0 && (
+        <p className="section--sub">Nothing here yet — first post coming soon.</p>
+      )}
+
       <div className="blog--list">
-        {posts.map((post) => (
+        {(posts || []).map((post) => (
           <Link key={post.slug} to={`/blog/${post.slug}`} className="blog--card">
             <div className="blog--card--meta">
               <span className="tag">{post.tag}</span>

@@ -1,4 +1,4 @@
-import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const proofPoints = [
   { value: "12+ months", label: "LLM agent running unattended in production" },
@@ -23,9 +23,9 @@ export default function HeroSection() {
         </p>
 
         <div className="hero--actions">
-          <ScrollLink to="work" smooth offset={-80} duration={400} className="btn btn-primary">
+          <Link to="/projects" className="btn btn-primary">
             See the work
-          </ScrollLink>
+          </Link>
           <a
             href="https://github.com/woooj02"
             target="_blank"

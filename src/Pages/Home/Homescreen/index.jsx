@@ -1,33 +1,30 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import HeroSection from "../HeroSection";
 import Featured from "../Featured";
-import MyPortfolio from "../MyPortfolio";
-import AboutMe from "../AboutMe";
-import Blog from "../Blog";
-import ContactMe from "../ContactMe";
-import Footer from "../Footer";
 
 export default function Home() {
-  const location = useLocation();
-
-  useEffect(() => {
-    const target = location.state?.scrollTo;
-    if (target) {
-      const el = document.getElementById(target);
-      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  }, [location.state]);
-
   return (
     <>
       <HeroSection />
       <Featured />
-      <MyPortfolio />
-      <AboutMe />
-      <Blog />
-      <ContactMe />
-      <Footer />
+      <section className="explore--section">
+        <div className="explore--grid">
+          <Link to="/projects" className="explore--card">
+            <h3 className="explore--title">More projects</h3>
+            <p className="explore--sub">
+              Distributed systems, data platforms, embedded work, and the rest of what I've built.
+            </p>
+            <span className="card--link">All projects ↗</span>
+          </Link>
+          <Link to="/blog" className="explore--card">
+            <h3 className="explore--title">Writing</h3>
+            <p className="explore--sub">
+              Notes from building and running my own systems.
+            </p>
+            <span className="card--link">Read the blog ↗</span>
+          </Link>
+        </div>
+      </section>
     </>
   );
 }

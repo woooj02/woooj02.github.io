@@ -150,6 +150,51 @@ section {
 
 .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
 
+/* Route pages: clear the fixed navbar and hold a sane min-height */
+.page > section:first-child {
+  padding-top: 150px;
+  min-height: 70vh;
+}
+
+/* ============================================================
+   Home explore strip
+   ============================================================ */
+.explore--section { padding-top: 0; }
+
+.explore--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.explore--card {
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 30px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.explore--card:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-2px);
+}
+
+.explore--title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.explore--sub {
+  color: var(--muted);
+  font-size: 15px;
+  flex-grow: 1;
+}
+
 /* ============================================================
    Navbar
    ============================================================ */
@@ -685,7 +730,10 @@ section {
   .featured--card { padding: 28px 24px; }
 
   .portfolio--grid,
+  .explore--grid,
   .contact--links { grid-template-columns: 1fr; }
+
+  .page > section:first-child { padding-top: 120px; }
 
   .about--grid {
     grid-template-columns: 1fr;

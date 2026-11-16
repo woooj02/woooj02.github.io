@@ -937,3 +937,23 @@ a.hire--offer-proof-link:hover { color: var(--accent); border-color: var(--accen
 .status-pill--open { background: rgba(63, 185, 80, 0.14); color: #6fdc8c; }
 .page > #hackathons, .page > #open-source { padding-bottom: 32px; }
 .page > #open-source, .page > #projects { padding-top: 48px; }
+
+/* Project screenshots on hackathon cards */
+.card--shot {
+  display: block;
+  margin: -30px -32px 22px;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+  border-radius: var(--radius) var(--radius) 0 0;
+  background: var(--bg);
+}
+.card--shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.portfolio--card:hover .card--shot img { transform: scale(1.02); }

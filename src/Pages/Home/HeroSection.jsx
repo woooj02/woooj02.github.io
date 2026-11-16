@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const proofPoints = [
   { value: "App Store", label: "Shayaak: full-stack app I built, shipped to iOS, and operate", href: "https://apps.apple.com/us/app/shayaak/id6790666246" },
   { value: "MLflow", label: "merged upstream fix to mlflow/mlflow (PR #26959)", href: "https://github.com/mlflow/mlflow/pull/26959" },
-  { value: "8 builds", label: "solo hackathon entries in six weeks, all with public code and demos", to: "/projects" },
+  { value: "9 builds", label: "solo hackathon entries, Oct–Nov 2026, all with public code", to: "/projects" },
 ];
 
 export default function HeroSection() {

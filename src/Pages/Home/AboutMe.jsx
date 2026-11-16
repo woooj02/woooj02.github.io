@@ -24,7 +24,7 @@ export default function AboutMe() {
             unattended across four channels since May 2026, and a wellness app I built is
             live on the web and on the iOS App Store. I'm also building Keeps Running, a
             multi-agent front-desk platform for small offices, as founder of Keeps
-            Running LLC. Between October and November 2026 I shipped eight solo hackathon
+            Running LLC. Between October and November 2026 I shipped nine solo hackathon
             builds, and I got a fix merged into MLflow.
           </p>
           <p>

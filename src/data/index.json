@@ -71,8 +71,7 @@
       ],
       "live": "https://asme326si3qdbv4raxgm4fbbge0fohve.lambda-url.us-east-1.on.aws/",
       "github": "https://github.com/woooj02/woundtrace",
-      "video": "https://youtu.be/AAn2KQZTjbw",
-      "devpost": "https://devpost.com/software/woundtrace"
+      "video": "https://youtu.be/AAn2KQZTjbw"
     }
   ],
   "portfolio": [
@@ -363,6 +362,23 @@
   ],
   "hackathons": [
     {
+      "id": "hand-duel",
+      "event": "Meta VR Start Developer Competition",
+      "date": "Nov 2026",
+      "title": "Hand Duel: Borrowlight",
+      "tagline": "A seated, hands-only Quest arcade: bend a shared ribbon of light, steal your rival's points, and leave them the route. Unity/OpenXR, deterministic rules, 80 tests.",
+      "tags": [
+        "Unity",
+        "C#",
+        "OpenXR",
+        "Quest hand tracking"
+      ],
+      "live": "https://www.meta.com/s/4ykAGmxTN",
+      "liveLabel": "Play on Quest",
+      "github": "https://github.com/woooj02/hand-duel",
+      "image": "/img/projects/hand-duel.jpg"
+    },
+    {
       "id": "sandbox-city",
       "event": "PayPal AI Hackathon",
       "date": "Nov 2026",
@@ -375,7 +391,8 @@
         "React"
       ],
       "live": "https://sandbox-city.keepsrunning.com",
-      "github": "https://github.com/woooj02/sandbox_city"
+      "github": "https://github.com/woooj02/sandbox_city",
+      "image": "/img/projects/sandbox-city.jpg"
     },
     {
       "id": "encore",
@@ -391,7 +408,8 @@
       ],
       "live": "https://encore.91.99.162.43.sslip.io",
       "github": "https://github.com/woooj02/YouCam-Hackathon",
-      "video": "https://youtu.be/01_CWZvpYu4"
+      "video": "https://youtu.be/01_CWZvpYu4",
+      "image": "/img/projects/encore.jpg"
     },
     {
       "id": "receipt",
@@ -407,7 +425,8 @@
       ],
       "live": "https://receipt.91.99.162.43.sslip.io",
       "github": "https://github.com/woooj02/receipt",
-      "video": "https://youtu.be/h0lgcsNLXpg"
+      "video": "https://youtu.be/h0lgcsNLXpg",
+      "image": "/img/projects/receipt.jpg"
     },
     {
       "id": "waive",
@@ -422,7 +441,8 @@
         "FastAPI"
       ],
       "live": "https://waive.91.99.162.43.sslip.io",
-      "github": "https://github.com/woooj02/waive"
+      "github": "https://github.com/woooj02/waive",
+      "image": "/img/projects/waive.jpg"
     },
     {
       "id": "accessibility-automation",
@@ -437,9 +457,9 @@
         "axe-core"
       ],
       "github": "https://gitlab.com/gitlab-ai-hackathon/transcend-october-2026/43690411/showcase",
-      "githubLabel": "Code on GitLab",
+      "githubLabel": "GitLab",
       "video": "https://youtu.be/GmAZz8Q5rkY",
-      "devpost": "https://devpost.com/software/accessibility-automation"
+      "image": "/img/projects/accessibility-automation.jpg"
     },
     {
       "id": "woundtrace",
@@ -456,7 +476,7 @@
       "live": "https://asme326si3qdbv4raxgm4fbbge0fohve.lambda-url.us-east-1.on.aws/",
       "github": "https://github.com/woooj02/woundtrace",
       "video": "https://youtu.be/AAn2KQZTjbw",
-      "devpost": "https://devpost.com/software/woundtrace"
+      "image": "/img/projects/woundtrace.jpg"
     },
     {
       "id": "saathi",
@@ -472,7 +492,8 @@
       ],
       "live": "https://saathi.91.99.162.43.sslip.io/f/sample",
       "github": "https://github.com/woooj02/saathi",
-      "video": "https://youtu.be/gGV9f4GBplA"
+      "video": "https://youtu.be/gGV9f4GBplA",
+      "image": "/img/projects/saathi.jpg"
     },
     {
       "id": "memory-lane",
@@ -488,7 +509,8 @@
       ],
       "live": "https://memory-lane.91.99.162.43.sslip.io",
       "github": "https://github.com/woooj02/memory-lane",
-      "video": "https://www.youtube.com/watch?v=0nj9_PJXPXk"
+      "video": "https://www.youtube.com/watch?v=0nj9_PJXPXk",
+      "image": "/img/projects/memory-lane.jpg"
     }
   ]
 }

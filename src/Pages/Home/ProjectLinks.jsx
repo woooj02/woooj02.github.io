@@ -1,9 +1,8 @@
 const ORDER = [
+  ["github", (i) => i.githubLabel || "GitHub"],
   ["live", (i) => i.liveLabel || "Live demo"],
   ["appstore", () => "App Store"],
-  ["github", (i) => i.githubLabel || "Source code"],
   ["video", () => "Demo video"],
-  ["devpost", () => "Devpost"],
 ];
 
 export default function ProjectLinks({ item }) {

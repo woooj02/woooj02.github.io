@@ -1,11 +1,12 @@
 import data from "../../data/index.json";
+import ProjectLinks from "./ProjectLinks";
 
 export default function MyPortfolio() {
   return (
     <section id="projects" className="portfolio--section">
       <div className="section--header">
         <p className="section--eyebrow">More projects</p>
-        <h2 className="section--heading">Built along the way</h2>
+        <h2 className="section--heading">Production systems, data platforms and earlier work</h2>
       </div>
 
       <div className="portfolio--grid">
@@ -18,13 +19,7 @@ export default function MyPortfolio() {
                 <span key={tag} className="tag">{tag}</span>
               ))}
             </div>
-            {item.github && (
-              <div className="card--links">
-                <a href={item.github} target="_blank" rel="noopener noreferrer" className="card--link">
-                  Source on GitHub ↗
-                </a>
-              </div>
-            )}
+            <ProjectLinks item={item} />
           </article>
         ))}
       </div>

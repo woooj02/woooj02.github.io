@@ -1,14 +1,15 @@
 import data from "../../data/index.json";
+import ProjectLinks from "./ProjectLinks";
 
 export default function Featured() {
   return (
     <section id="work" className="featured--section">
       <div className="section--header">
         <p className="section--eyebrow">Featured work</p>
-        <h2 className="section--heading">Systems I run in production</h2>
+        <h2 className="section--heading">Shipped, live, and mine to run</h2>
         <p className="section--sub">
-          Not demos — software that real users and real schedules depend on, with the
-          deployment, monitoring, and failure handling that implies.
+          Each one is deployed and can be clicked. Behind them is the
+          infrastructure, testing and failure handling that a real deployment needs.
         </p>
       </div>
 
@@ -23,18 +24,8 @@ export default function Featured() {
                 <span key={tag} className="tag">{tag}</span>
               ))}
             </div>
-            <div className="card--links">
-              {item.live && (
-                <a href={item.live} target="_blank" rel="noopener noreferrer" className="card--link card--link-primary">
-                  Visit live site ↗
-                </a>
-              )}
-              {item.github && (
-                <a href={item.github} target="_blank" rel="noopener noreferrer" className="card--link">
-                  Source on GitHub ↗
-                </a>
-              )}
-            </div>
+            <ProjectLinks item={item} />
+            {item.note && <p className="card--note">{item.note}</p>}
           </article>
         ))}
       </div>

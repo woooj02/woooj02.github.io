@@ -20,9 +20,12 @@ export default function AboutMe() {
             What sets my work apart is that I operate what I build. My projects don't
             end at a working demo — they get deployed to my own VPS infrastructure with
             nginx, systemd services, scheduled jobs, structured logging, alerting, and
-            nightly backups, and then they keep running. An LLM agent pipeline I built
-            has run unattended for over a year; a content pipeline publishes on schedule
-            across four channels; a wellness product is live on the open web.
+            nightly backups, and then they keep running. A content pipeline has published
+            unattended across four channels since May 2026, and a wellness app I built is
+            live on the web and on the iOS App Store. I'm also building Keeps Running, a
+            multi-agent front-desk platform for small offices, as founder of Keeps
+            Running LLC. Between October and November 2026 I shipped eight solo hackathon
+            builds, and I got a fix merged into MLflow.
           </p>
           <p>
             At UC Denver I was a Teaching Assistant for Software Engineering — leading

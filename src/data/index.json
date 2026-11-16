@@ -1,117 +1,494 @@
 {
   "featured": [
     {
-      "id": "job-agent",
-      "kicker": "Production AI · 12+ months unattended",
-      "title": "Autonomous Job Application Agent",
-      "description": "A Python agent harness integrating Anthropic Claude and Google Gemini that has run unattended on a cloud Linux VPS for over a year. Multi-stage LLM decision logic with tool selection and chaining, fallback strategies, hard-rejection guardrails, and retry logic. RAG-style retrieval injects structured context into prompts; outputs are validated as structured JSON against multi-criteria checks, with severity-routed alerting and end-of-run metrics.",
-      "tags": ["Python", "Claude", "Gemini", "SQLite", "Pydantic", "Linux VPS", "cron"],
-      "github": "https://github.com/woooj02/job-agent"
-    },
-    {
       "id": "shayaak",
-      "kicker": "Live product · shayaak.com",
-      "title": "Shayaak — Wellness Web App",
-      "description": "A full-stack wellness app: daily journal, task manager, weight tracking, and Saya — an AI companion powered by a self-hosted Llama 3.2 model running on the same box via Ollama. Multi-user with session auth, React front end, Express + SQLite back end. I run the whole stack myself on a Hetzner VPS: nginx, SSL, systemd services, git-based deploys, and nightly database backups.",
-      "tags": ["React", "Node.js", "Express", "SQLite", "Ollama", "nginx", "systemd"],
-      "live": "https://shayaak.com"
+      "kicker": "Shipped product · web + iOS App Store",
+      "title": "Shayaak — Wellness App, Live on the Web and the App Store",
+      "description": "A full-stack wellness app (journal, tasks, goals, time and weight tracking) with Saya, an AI companion that calls 16 tools through a provider-neutral layer: the model decides, deterministic server code executes, and destructive actions can only be proposed. React (Vite) shipped natively to iOS via Capacitor with a hand-written Swift StoreKit 2 plugin; Node/Express + SQLite backend with 250+ automated tests; dual-rail billing (Stripe on web, Apple In-App Purchase on iOS with server-side receipt verification). Designed, built, released through App Store review and operated solo on my own Linux VPS.",
+      "tags": [
+        "React",
+        "Node.js",
+        "Express",
+        "SQLite",
+        "Capacitor",
+        "Swift",
+        "Stripe",
+        "nginx",
+        "systemd"
+      ],
+      "live": "https://shayaak.com",
+      "appstore": "https://apps.apple.com/us/app/shayaak/id6790666246",
+      "note": "Private repo (commercial product): architecture walkthrough on request."
     },
     {
-      "id": "lumen",
-      "kicker": "Data analysis · 10/10 tests passing",
-      "title": "Lumen — Automated Data-Analysis Dashboard",
-      "description": "Upload any dataset and get a dashboard: KPIs, plain-English insights, auto-generated charts, and dataset-agnostic anomaly detection with scikit-learn Isolation Forest. Includes a SQL query sandbox, a leak-free AutoML pipeline (Pipeline + ColumnTransformer, cross-validated), and one-click HTML reporting. Pure-function analysis engine with full pytest coverage; cleaning workflows export as runnable pandas code.",
-      "tags": ["Python", "Streamlit", "scikit-learn", "Pandas", "Plotly", "pytest"],
-      "github": "https://github.com/woooj02/Lumen"
+      "id": "keepsrunning",
+      "kicker": "Founder & engineer · Keeps Running LLC",
+      "title": "Keeps Running — Multi-Agent Front Desk for Small Offices",
+      "description": "One engine running four AI agents for a small office: answer and book new inquiries, chase paperwork, read documents, keep clients updated. The model decides and code gates every action: every outbound message is held for the owner's approval, with SSN/card masking and per-person send caps. Hybrid document pipeline (on-server RapidOCR first, vision LLM only for low-confidence pages), AWS SES/S3/SNS inbound mail with verified signatures, Stripe billing, a 45-case LLM eval suite and 149 offline tests.",
+      "tags": [
+        "Python",
+        "FastAPI",
+        "Pydantic",
+        "Together AI",
+        "Claude",
+        "RapidOCR",
+        "AWS SES/S3/SNS",
+        "Stripe"
+      ],
+      "live": "https://agent.keepsrunning.com",
+      "liveLabel": "Live test instance",
+      "note": "Private repo: live test instance, walkthrough on request."
+    },
+    {
+      "id": "sandbox-city",
+      "kicker": "PayPal AI Hackathon · Nov 2026",
+      "title": "Sandbox City — Crash-Test Lab for AI Shopping Agents",
+      "description": "Gives an AI agent a PayPal key and finds out what a malicious store page can make it do. In testing, a real model was talked into a $1,620 order shipped to an attacker's PO box on the PayPal sandbox. Sandbox City tests your own agent against 16 cases, prices each payment defense over 30 simulated days with 95% intervals, then enforces the winning rulebook at a real PayPal checkout (Orders v2, Agent Toolkit). It uses a crash-safe payment journal: a test kills the process mid-capture, and the customer is still charged exactly once.",
+      "tags": [
+        "TypeScript",
+        "React",
+        "Fastify",
+        "PayPal Orders v2",
+        "PayPal Agent Toolkit",
+        "Ollama",
+        "PixiJS"
+      ],
+      "live": "https://sandbox-city.keepsrunning.com",
+      "github": "https://github.com/woooj02/sandbox_city"
+    },
+    {
+      "id": "woundtrace",
+      "kicker": "OpenCV AI Competition 2026",
+      "title": "WoundTrace — Agentic Computer Vision on AWS",
+      "description": "Measure a wound from one phone photo: an Amazon Bedrock agent (Converse API, 9 tools) checks the photo, rejects tilted or blurred shots with a specific retake instruction, measures area in cm² with its uncertainty, and drafts a nurse note when healing stalls; a human approves every alert. The OpenCV segmentation model, trained in PyTorch, scores Dice 0.82 on 200 expert-annotated clinical photos, with zero false outlines on 1,378 healthy-foot photos. Deployed serverless on AWS Lambda.",
+      "tags": [
+        "Python",
+        "OpenCV 5",
+        "PyTorch",
+        "Amazon Bedrock",
+        "AWS Lambda",
+        "CloudWatch"
+      ],
+      "live": "https://asme326si3qdbv4raxgm4fbbge0fohve.lambda-url.us-east-1.on.aws/",
+      "github": "https://github.com/woooj02/woundtrace",
+      "video": "https://youtu.be/AAn2KQZTjbw",
+      "devpost": "https://devpost.com/software/woundtrace"
     }
   ],
   "portfolio": [
     {
+      "id": "market-terminal",
+      "title": "Market Terminal — Quant Research Platform",
+      "description": "A Bloomberg-style web terminal (live quotes, 500-stock scanner, options analytics, macro screens, paper-trading ticket) on FastAPI + WebSockets, over a 10-year bar warehouse with a no-look-ahead backtest engine. The engine uses a survivorship-bias-free universe and a deflated Sharpe ratio. 135 pytest tests in GitHub Actions. Private repo.",
+      "tags": [
+        "Python",
+        "FastAPI",
+        "WebSockets",
+        "SQLite",
+        "pandas",
+        "GitHub Actions"
+      ]
+    },
+    {
       "id": "youtube-agent",
       "title": "Multi-Channel YouTube Content Agent",
-      "description": "Config-driven Python framework producing tonally distinct video content across 4 production channels — research, script, voice-over, and render orchestrated across 5+ external services, published on a staggered cron schedule. Private repo; running in production.",
-      "tags": ["Python", "Gemini", "Edge TTS", "ffmpeg", "YouTube API", "OAuth"]
+      "description": "A 7-stage pipeline that has run unattended on cloud Linux since May 2026 across 4 channels: trend discovery, research, scriptwriting, neural TTS, video assembly and scheduled uploads. It published 147 of 152 attempts (~97%) at the August audit, with per-channel failure isolation and multi-fallback alerts. Private repo.",
+      "tags": [
+        "Python",
+        "Gemini",
+        "Tavily",
+        "Edge TTS",
+        "ffmpeg",
+        "YouTube API"
+      ]
+    },
+    {
+      "id": "job-agent",
+      "title": "Autonomous Job Application Agent",
+      "description": "Scrapes 6 job-board APIs, LLM-scores relevance against a typed profile with hard-rejection guardrails, and renders ATS-tailored resume and cover letter PDFs deterministically, so the model cannot invent experience. Cron-driven on cloud Linux. Private repo.",
+      "tags": [
+        "Python",
+        "Gemini",
+        "SQLite",
+        "Playwright",
+        "cron"
+      ]
+    },
+    {
+      "id": "grounded-apps",
+      "title": "Grounded AI Apps — Onsite · Keyed · Runsheet · Shortlist",
+      "description": "Four small AI products, each built around one rule that stops the model from making things up. They include a site assistant that declines rather than cites a source it never retrieved, and document-to-table extraction with per-field confidence and human review. 660+ tests across the four. Private repos.",
+      "tags": [
+        "Python",
+        "FastAPI",
+        "RAG",
+        "Multi-provider LLM",
+        "pytest"
+      ]
+    },
+    {
+      "id": "lumen",
+      "title": "Lumen — Automated Data-Analysis Dashboard",
+      "description": "Upload any dataset and get KPIs, plain-English insights, charts and Isolation Forest anomaly screening. It has a SQL sandbox and a leak-free cross-validated AutoML pipeline, and the pure-function engine is fully covered by pytest. Private repo.",
+      "tags": [
+        "Python",
+        "Streamlit",
+        "scikit-learn",
+        "Plotly",
+        "pytest"
+      ]
     },
     {
       "id": "supply-chain",
       "title": "Supply Chain Analytics Platform",
       "description": "Real-time ETL processing 5,000+ transactions with Pydantic validation and retry logic. Ensemble anomaly detection (Z-score, IQR, Isolation Forest, Elliptic Envelope) with severity-routed Slack/Email alerting, Holt-Winters/ARIMA forecasting validated against holdouts, and a 6-page Plotly Dash dashboard.",
-      "tags": ["Python", "PostgreSQL", "Redis", "Plotly Dash", "scikit-learn"],
+      "tags": [
+        "Python",
+        "PostgreSQL",
+        "Redis",
+        "Plotly Dash",
+        "scikit-learn"
+      ],
       "github": "https://github.com/woooj02/supply-chain-analytics"
     },
     {
       "id": "taskforge",
       "title": "TaskForge — Distributed Task Orchestration",
       "description": "Cloud-native task orchestration platform: gRPC microservices, Kafka event streaming, event sourcing with CQRS and saga patterns, Kubernetes deployment with HPA autoscaling, and OpenTelemetry + Prometheus observability.",
-      "tags": ["Python", "gRPC", "Kafka", "Kubernetes", "PostgreSQL", "OpenTelemetry"],
+      "tags": [
+        "Python",
+        "gRPC",
+        "Kafka",
+        "Kubernetes",
+        "PostgreSQL",
+        "OpenTelemetry"
+      ],
       "github": "https://github.com/woooj02/taskforge-platform"
     },
     {
       "id": "resume-tailor",
       "title": "Resume Tailor",
       "description": "Local-first resume and cover letter generator: paste a job description and a locally hosted LLM (Ollama) tailors ATS-friendly PDFs. No cloud APIs — everything runs on my own machine.",
-      "tags": ["Python", "Ollama", "LLM", "PDF generation"],
+      "tags": [
+        "Python",
+        "Ollama",
+        "LLM",
+        "PDF generation"
+      ],
       "github": "https://github.com/woooj02/resume-tailor"
     },
     {
       "id": "mars-rover",
-      "title": "Mars Rover — University Rover Challenge",
-      "description": "Led the CS team through the full lifecycle: requirements, design, embedded C++ for sensor subsystems over UART/SPI/I2C, and hardware/software debugging with logic analyzers and gdb. MATLAB/Simulink models validated that physical hardware matched simulated response.",
-      "tags": ["C++", "ROS2", "UART/SPI/I2C", "MATLAB", "Embedded"]
+      "title": "Mars Rover — University Rover Challenge (CS Team Lead)",
+      "description": "Led the CS team through the full lifecycle. In ROS2 on a Raspberry Pi I built global path planning with Hybrid A*, trajectory tracking with Pure Pursuit and MPC, and PID control loops. Also wrote embedded C++ for sensor subsystems over UART/SPI/I2C and built Gazebo/URDF and MATLAB/Simulink models to validate the hardware.",
+      "tags": [
+        "C++",
+        "ROS2",
+        "Hybrid A*",
+        "MPC",
+        "UART/SPI/I2C",
+        "Gazebo"
+      ]
     },
     {
       "id": "smart-home",
       "title": "Smart Home Network",
-      "description": "IoT home automation on Arduino/ESP8266 — lighting, sensors, and appliances controlled through a web interface.",
-      "tags": ["C++", "Arduino", "ESP8266", "IoT"],
+      "description": "ESP32 smart-home network: sensor, LCD and control firmware in C++, with full design docs.",
+      "tags": [
+        "C++",
+        "ESP32",
+        "Arduino",
+        "IoT"
+      ],
       "github": "https://github.com/woooj02/Smart-Home-Network"
     },
     {
       "id": "battleship",
       "title": "Battleship (C++)",
       "description": "Classic Battleship built in modern C++ with an object-oriented design and CSV-based game persistence.",
-      "tags": ["C++", "OOP", "STL"],
+      "tags": [
+        "C++",
+        "OOP",
+        "STL"
+      ],
       "github": "https://github.com/woooj02/Battleship"
     },
     {
       "id": "web-page-rank",
       "title": "Web Page Rank",
       "description": "PageRank implemented and optimized over the Stanford web graph (~280K nodes) using NetworkX and sparse matrix operations, with visualizations of community structure and node importance.",
-      "tags": ["Python", "NetworkX", "Graph Analysis"]
+      "tags": [
+        "Python",
+        "NetworkX",
+        "Graph Analysis"
+      ]
     }
   ],
   "skillGroups": [
     {
       "label": "Languages",
-      "items": ["Python", "C++", "TypeScript / JavaScript", "SQL", "Bash"]
+      "items": [
+        "Python",
+        "TypeScript / JavaScript",
+        "C++",
+        "SQL",
+        "Bash",
+        "Swift (StoreKit)"
+      ]
     },
     {
       "label": "AI & LLM Systems",
-      "items": ["Claude API", "Gemini API", "Agent orchestration", "Tool calling", "RAG retrieval", "Prompt engineering", "Structured output validation", "Ollama (self-hosted)"]
-    },
-    {
-      "label": "Data Engineering",
-      "items": ["ETL pipelines", "PostgreSQL", "SQLite", "Redis", "Pandas", "NumPy", "Pydantic", "SQLAlchemy"]
+      "items": [
+        "Claude / Bedrock",
+        "Gemini",
+        "Together AI",
+        "NVIDIA Nemotron",
+        "Ollama",
+        "Multi-agent systems",
+        "Tool calling",
+        "MCP servers",
+        "Human-in-the-loop approval",
+        "LLM eval suites",
+        "RAG retrieval",
+        "Structured outputs"
+      ]
     },
     {
       "label": "ML & Analytics",
-      "items": ["scikit-learn", "PyTorch", "TensorFlow", "OpenCV", "Anomaly detection", "Time-series forecasting", "Statistical modeling"]
+      "items": [
+        "PyTorch",
+        "OpenCV",
+        "scikit-learn",
+        "Z3 SMT solver",
+        "Anomaly detection",
+        "Time-series forecasting",
+        "Statistical modeling"
+      ]
+    },
+    {
+      "label": "Data Engineering",
+      "items": [
+        "ETL pipelines",
+        "PostgreSQL",
+        "SQLite",
+        "Redis",
+        "Pandas",
+        "NumPy",
+        "Pydantic",
+        "SQLAlchemy"
+      ]
     },
     {
       "label": "Cloud & DevOps",
-      "items": ["Linux (daily driver)", "Docker", "Kubernetes", "GitHub Actions", "nginx", "systemd", "cron", "AWS", "GCP"]
+      "items": [
+        "Linux (daily driver)",
+        "AWS (Lambda, Bedrock, SES, S3, SNS)",
+        "Docker",
+        "Kubernetes",
+        "GitHub Actions",
+        "GitLab CI",
+        "nginx",
+        "systemd",
+        "cron"
+      ]
+    },
+    {
+      "label": "Product, Payments & Mobile",
+      "items": [
+        "Stripe",
+        "PayPal Orders v2",
+        "Apple In-App Purchase",
+        "Capacitor (iOS)",
+        "App Store release",
+        "Sign in with Apple / Google"
+      ]
     },
     {
       "label": "Visualization & BI",
-      "items": ["Plotly Dash", "Streamlit", "Tableau", "Power BI", "matplotlib"]
+      "items": [
+        "Plotly Dash",
+        "Streamlit",
+        "Tableau",
+        "Power BI",
+        "matplotlib"
+      ]
     },
     {
       "label": "Embedded & Hardware",
-      "items": ["Arduino", "ESP32", "UART / SPI / I2C", "ROS2", "Logic analyzers", "gdb"]
+      "items": [
+        "Arduino",
+        "ESP32",
+        "UART / SPI / I2C",
+        "ROS2",
+        "Logic analyzers",
+        "gdb"
+      ]
     },
     {
       "label": "Security",
-      "items": ["Secure SDLC", "OWASP Top 10", "OAuth 2.0", "TLS / HTTPS", "Cybersecurity certificate (UCD)"]
+      "items": [
+        "Secure SDLC",
+        "OWASP Top 10",
+        "OAuth 2.0",
+        "TLS / HTTPS",
+        "Cybersecurity certificate (UCD)"
+      ]
+    }
+  ],
+  "openSource": [
+    {
+      "id": "mlflow-26959",
+      "repo": "mlflow/mlflow",
+      "status": "Merged",
+      "title": "Record tool definitions passed as Mistral SDK models in mlflow.mistral.autolog() traces",
+      "description": "Found that MLflow's Mistral autolog silently dropped tool definitions passed as SDK model objects (issue #26954), wrote the fix with a regression test verified against mistralai 1.10.0 and 2.10.1, and saw it through review into master (Nov 2026).",
+      "href": "https://github.com/mlflow/mlflow/pull/26959"
+    },
+    {
+      "id": "mlflow-27287",
+      "repo": "mlflow/mlflow",
+      "status": "Open PR",
+      "title": "Record streaming chat completions in mlflow.groq.autolog() traces",
+      "description": "Reported that Groq autolog recorded a raw <groq.Stream object> as the span output for streaming completions (#27075), filed the feature request (#27233), and opened the PR that adds streaming trace support.",
+      "href": "https://github.com/mlflow/mlflow/pull/27287"
+    },
+    {
+      "id": "bee-cli-python",
+      "repo": "woooj02/bee-cli-python",
+      "status": "Author",
+      "title": "bee-cli-python — Python client for the Bee wearable",
+      "description": "A dependency-free Python client covering more of the Bee CLI than the official Node library: typed live events, reconnects with backoff, and a FakeBee for testing without a device.",
+      "href": "https://github.com/woooj02/bee-cli-python"
+    }
+  ],
+  "hackathons": [
+    {
+      "id": "sandbox-city",
+      "event": "PayPal AI Hackathon",
+      "date": "Nov 2026",
+      "title": "Sandbox City",
+      "tagline": "Crash-test AI shopping agents, price each payment defense, enforce the winner at a real PayPal checkout.",
+      "tags": [
+        "TypeScript",
+        "PayPal",
+        "Fastify",
+        "React"
+      ],
+      "live": "https://sandbox-city.keepsrunning.com",
+      "github": "https://github.com/woooj02/sandbox_city"
+    },
+    {
+      "id": "encore",
+      "event": "YouCam API Skin AI & eCommerce VTO Hackathon",
+      "date": "Nov 2026",
+      "title": "ENCORE",
+      "tagline": "A virtual fitting room for a whole theatre cast: a solver assigns one shared costume rack across every scene within budget, and the YouCam APIs render each look on the performer. 92 unit tests.",
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "YouCam API",
+        "Constraint solving"
+      ],
+      "live": "https://encore.91.99.162.43.sslip.io",
+      "github": "https://github.com/woooj02/YouCam-Hackathon",
+      "video": "https://youtu.be/01_CWZvpYu4"
+    },
+    {
+      "id": "receipt",
+      "event": "Qloo Agentic Hackathon",
+      "date": "Oct 2026",
+      "title": "Receipt",
+      "tagline": "Checks an AI concierge's restaurant picks against the person's actual taste using Qloo, before they reach the customer. A live Claude client went from 0/3 to 3/3 picks over MCP. 82 tests.",
+      "tags": [
+        "Python",
+        "FastAPI",
+        "Qloo API",
+        "MCP"
+      ],
+      "live": "https://receipt.91.99.162.43.sslip.io",
+      "github": "https://github.com/woooj02/receipt",
+      "video": "https://youtu.be/h0lgcsNLXpg"
+    },
+    {
+      "id": "waive",
+      "event": "Nebius × NVIDIA Global AI Hackathon",
+      "date": "Oct 2026",
+      "title": "Waive",
+      "tagline": "NVIDIA Nemotron writes each Colorado hospital's charity-care policy as formal logic; the Z3 theorem prover checks it against state law and 501(r) and returns the exact household or day where it falls short.",
+      "tags": [
+        "Python",
+        "Nemotron",
+        "Z3 SMT",
+        "FastAPI"
+      ],
+      "live": "https://waive.91.99.162.43.sslip.io",
+      "github": "https://github.com/woooj02/waive"
+    },
+    {
+      "id": "accessibility-automation",
+      "event": "GitLab Transcend Hackathon",
+      "date": "Oct 2026",
+      "title": "Accessibility Automation",
+      "tagline": "Supervised GitLab Duo agents that add WCAG 2.1 AA criteria to issues, catch barriers in every merge request, commit the fix and re-check the live site. Fixed 75 of 76 real barriers across seven site templates.",
+      "tags": [
+        "GitLab Duo",
+        "CI/CD",
+        "Playwright",
+        "axe-core"
+      ],
+      "github": "https://gitlab.com/gitlab-ai-hackathon/transcend-october-2026/43690411/showcase",
+      "githubLabel": "Code on GitLab",
+      "video": "https://youtu.be/GmAZz8Q5rkY",
+      "devpost": "https://devpost.com/software/accessibility-automation"
+    },
+    {
+      "id": "woundtrace",
+      "event": "OpenCV AI Competition",
+      "date": "Oct 2026",
+      "title": "WoundTrace",
+      "tagline": "Wound area in cm² from one phone photo: an Amazon Bedrock agent with 9 tools, an OpenCV segmenter at Dice 0.82 on clinical photos, and serverless on AWS Lambda.",
+      "tags": [
+        "OpenCV",
+        "PyTorch",
+        "Bedrock",
+        "Lambda"
+      ],
+      "live": "https://asme326si3qdbv4raxgm4fbbge0fohve.lambda-url.us-east-1.on.aws/",
+      "github": "https://github.com/woooj02/woundtrace",
+      "video": "https://youtu.be/AAn2KQZTjbw",
+      "devpost": "https://devpost.com/software/woundtrace"
+    },
+    {
+      "id": "saathi",
+      "event": "Build With AI",
+      "date": "Oct 2026",
+      "title": "Saathi",
+      "tagline": "A patient who doesn't speak English fills a clinic's English intake PDF in Nepali, by voice. The clinic gets its own PDF back, filled in English.",
+      "tags": [
+        "Python",
+        "Gemini",
+        "PyMuPDF",
+        "Voice AI"
+      ],
+      "live": "https://saathi.91.99.162.43.sslip.io/f/sample",
+      "github": "https://github.com/woooj02/saathi",
+      "video": "https://youtu.be/gGV9f4GBplA"
+    },
+    {
+      "id": "memory-lane",
+      "event": "Amazon Build, Ship, Shape",
+      "date": "Oct 2026",
+      "title": "Memory Lane + bee-cli-python",
+      "tagline": "Evening memory practice in Nepali for a parent, built from what her Bee wearable heard that day and served to Alexa+ as an MCP server. Also includes the open-source Python SDK it needed.",
+      "tags": [
+        "Python",
+        "MCP",
+        "Claude",
+        "Alexa+"
+      ],
+      "live": "https://memory-lane.91.99.162.43.sslip.io",
+      "github": "https://github.com/woooj02/memory-lane",
+      "video": "https://www.youtube.com/watch?v=0nj9_PJXPXk"
     }
   ]
 }

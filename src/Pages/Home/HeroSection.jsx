@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const proofPoints = [
-  { value: "12+ months", label: "LLM agent running unattended in production" },
-  { value: "shayaak.com", label: "full-stack product I built, deployed, and operate", href: "https://shayaak.com" },
-  { value: "4 channels", label: "automated content pipeline publishing weekly" },
+  { value: "App Store", label: "Shayaak: full-stack app I built, shipped to iOS, and operate", href: "https://apps.apple.com/us/app/shayaak/id6790666246" },
+  { value: "MLflow", label: "merged upstream fix to mlflow/mlflow (PR #26959)", href: "https://github.com/mlflow/mlflow/pull/26959" },
+  { value: "8 builds", label: "solo hackathon entries in six weeks, all with public code and demos", to: "/projects" },
 ];
 
 export default function HeroSection() {
@@ -16,10 +16,10 @@ export default function HeroSection() {
           <span className="hero--title-accent"> unattended in production.</span>
         </h1>
         <p className="hero--description">
-          Software engineer working across LLM agent systems, data platforms, and
-          full-stack web apps — from multi-stage agent pipelines on my own Linux
-          infrastructure to a live wellness product with a self-hosted AI companion.
-          B.S. Computer Science, University of Colorado Denver.
+          Software engineer building AI agent systems, computer vision, data platforms
+          and full-stack apps. I ship them with the guardrails, evaluations and
+          infrastructure that production needs. Founder of Keeps Running LLC, open-source
+          contributor to MLflow. B.S. Computer Science, University of Colorado Denver.
         </p>
 
         <div className="hero--actions">
@@ -39,7 +39,9 @@ export default function HeroSection() {
         <div className="hero--proof">
           {proofPoints.map((p) => (
             <div key={p.value} className="hero--proof-item">
-              {p.href ? (
+              {p.to ? (
+                <Link to={p.to} className="hero--proof-value hero--proof-link">{p.value}</Link>
+              ) : p.href ? (
                 <a href={p.href} target="_blank" rel="noopener noreferrer" className="hero--proof-value hero--proof-link">
                   {p.value}
                 </a>

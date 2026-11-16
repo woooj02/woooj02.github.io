@@ -1,4 +1,5 @@
 import data from "../../data/index.json";
+import Highlights from "./Highlights";
 
 export default function AboutMe() {
   return (
@@ -7,6 +8,8 @@ export default function AboutMe() {
         <p className="section--eyebrow">About</p>
         <h2 className="section--heading">Background</h2>
       </div>
+
+      <Highlights />
 
       <div className="about--grid">
         <div className="about--text">

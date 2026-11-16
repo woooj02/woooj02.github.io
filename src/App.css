@@ -249,9 +249,16 @@ section {
 .nav__hamburger.active .nav__hamburger__line:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 /* ============================================================
-   Hero
+   Hero: one idea, lots of air
    ============================================================ */
-.hero--section { padding-top: 150px; padding-bottom: 40px; }
+.hero--section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 120px;
+}
 
 .hero--eyebrow {
   display: inline-flex;
@@ -263,8 +270,8 @@ section {
   background: var(--bg-raised);
   border: 1px solid var(--border);
   border-radius: 999px;
-  padding: 6px 14px 6px 12px;
-  margin-bottom: 28px;
+  padding: 6px 16px 6px 13px;
+  margin-bottom: 36px;
 }
 
 .hero--dot {
@@ -276,59 +283,60 @@ section {
 }
 
 .hero--title {
-  font-size: clamp(40px, 7vw, 84px);
+  font-size: clamp(46px, 8.5vw, 104px);
   font-weight: 800;
-  letter-spacing: -0.045em;
-  line-height: 1.0;
-  max-width: 980px;
+  letter-spacing: -0.05em;
+  line-height: 0.98;
+  max-width: 900px;
 }
 
 .hero--title-accent { color: var(--faint); }
 
 .hero--description {
-  margin-top: 26px;
-  max-width: 640px;
-  font-size: 18px;
+  margin-top: 30px;
+  max-width: 520px;
+  font-size: 19px;
+  line-height: 1.6;
   color: var(--muted);
 }
 
 .hero--actions {
   display: flex;
+  justify-content: center;
   gap: 12px;
-  margin-top: 32px;
+  margin-top: 40px;
   flex-wrap: wrap;
 }
 
-.hero--proof {
+/* Highlights (About page) */
+.highlights {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-  margin-top: 56px;
-  max-width: 900px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 72px;
 }
 
-.hero--proof-item {
+.highlights--item {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 4px;
   background: var(--bg-raised);
   border: 1px solid var(--border);
   border-radius: 14px;
-  padding: 16px 18px;
+  padding: 20px 22px;
   transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.hero--proof-item:hover { border-color: var(--border-strong); transform: translateY(-2px); box-shadow: var(--shadow); }
-
-.hero--proof-value { font-size: 15.5px; font-weight: 700; letter-spacing: -0.01em; }
-.hero--proof-label { font-size: 13.5px; color: var(--faint); }
+.highlights--item:hover { border-color: var(--border-strong); transform: translateY(-2px); box-shadow: var(--shadow); }
+.highlights--value { font-size: 15.5px; font-weight: 700; letter-spacing: -0.01em; }
+.highlights--detail { font-size: 13.5px; color: var(--faint); }
 
 /* ============================================================
    Gallery: category pills + masonry tiles
    ============================================================ */
-.gallery--section { padding-top: 40px; }
+.gallery--section { padding-top: 24px; padding-bottom: 140px; scroll-margin-top: 40px; }
 .page > section.gallery--section { padding-top: 140px; }
-.gallery--header { margin-bottom: 32px; max-width: 680px; }
+.gallery--header { margin-bottom: 44px; max-width: 680px; }
 
 .filters {
   position: sticky;
@@ -337,8 +345,8 @@ section {
   display: flex;
   gap: 8px;
   overflow-x: auto;
-  padding: 10px 0 14px;
-  margin-bottom: 18px;
+  padding: 12px 0 18px;
+  margin-bottom: 36px;
   background: linear-gradient(var(--bg) 78%, rgba(246, 246, 243, 0));
   scrollbar-width: none;
 }
@@ -363,14 +371,14 @@ section {
 .filter--active, .filter--active:hover { background: var(--ink); color: #fff; }
 .filter--count { font-size: 12px; opacity: 0.55; font-variant-numeric: tabular-nums; }
 
-.masonry { display: flex; gap: 20px; align-items: flex-start; }
+.masonry { display: flex; gap: 32px; align-items: flex-start; }
 .masonry--col { flex: 1 1 0; min-width: 0; }
 
 .tile {
   position: relative;
   display: block;
   width: 100%;
-  margin: 0 0 26px;
+  margin: 0 0 48px;
   padding: 0;
   text-align: left;
   background: none;
@@ -400,8 +408,8 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 18px;
-  padding: 24px 24px 22px;
+  gap: 20px;
+  padding: 28px 28px 26px;
   border: none;
 }
 
@@ -409,7 +417,7 @@ section {
 .tile--type-title { font-size: clamp(24px, 2.4vw, 32px); font-weight: 800; letter-spacing: -0.035em; line-height: 1.04; }
 .tile--type-summary { font-size: 14.5px; line-height: 1.45; opacity: 0.85; }
 
-.tile--caption { display: flex; flex-direction: column; gap: 1px; padding: 12px 4px 0; }
+.tile--caption { display: flex; flex-direction: column; gap: 2px; padding: 16px 4px 0; }
 .tile--title { font-size: 15px; font-weight: 650; letter-spacing: -0.01em; color: var(--text); }
 .tile--kicker { font-size: 13px; color: var(--faint); }
 
@@ -788,10 +796,12 @@ section {
 
   .navbar--items .navbar--content { font-size: 22px; }
 
-  .hero--section { padding-top: 120px; }
+  .hero--section { padding-top: 150px; padding-bottom: 80px; }
   .navbar--github { margin-left: 0; }
 
-  .hero--proof { grid-template-columns: 1fr; }
+  .highlights { grid-template-columns: 1fr 1fr; }
+  .masonry { gap: 22px; }
+  .tile { margin-bottom: 40px; }
   .filters { top: 56px; }
   .modal--body { padding: 24px 22px 28px; }
   .modal--backdrop { padding: 16px 10px; }
@@ -806,6 +816,10 @@ section {
   }
 
   .footer--container { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 560px) {
+  .highlights { grid-template-columns: 1fr; }
 }
 /* ============================================================
    Hire page

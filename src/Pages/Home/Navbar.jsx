@@ -30,7 +30,8 @@ function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? "navbar--scrolled" : ""}`}>
       <Link to="/" className="navbar--logo" onClick={closeMenu}>
-        aryan<span className="navbar--logo-accent">.neopane</span>
+        <span className="navbar--logo-mark" aria-hidden="true">A</span>
+        Aryan Neopane
       </Link>
 
       <button

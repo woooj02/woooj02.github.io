@@ -3,9 +3,7 @@ import React, { useEffect } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./Pages/Home/Navbar";
 import Home from "./Pages/Home/Homescreen";
-import MyPortfolio from "./Pages/Home/MyPortfolio";
-import Hackathons from "./Pages/Home/Hackathons";
-import OpenSource from "./Pages/Home/OpenSource";
+import Gallery from "./Pages/Home/Gallery";
 import AboutMe from "./Pages/Home/AboutMe";
 import Blog from "./Pages/Home/Blog";
 import ContactMe from "./Pages/Home/ContactMe";
@@ -29,7 +27,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<main className="page"><Hackathons /><OpenSource /><MyPortfolio /></main>} />
+          <Route path="/projects" element={<main className="page"><Gallery eyebrow="Projects" heading="Everything I've built" sub="Shipped products, hackathon builds, open-source work and earlier projects. Pick a category, or open any project for the full write-up and links." /></main>} />
           <Route path="/about" element={<main className="page"><AboutMe /></main>} />
           <Route path="/blog" element={<main className="page"><Blog /></main>} />
           <Route path="/blog/:slug" element={<BlogPost />} />

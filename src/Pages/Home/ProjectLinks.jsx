@@ -3,6 +3,7 @@ const ORDER = [
   ["live", (i) => i.liveLabel || "Live demo"],
   ["appstore", () => "App Store"],
   ["video", () => "Demo video"],
+  ["demoRequest", () => "Request a demo"],
 ];
 
 export default function ProjectLinks({ item }) {

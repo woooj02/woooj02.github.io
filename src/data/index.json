@@ -227,7 +227,7 @@
     {
       "id": "youtube-agent",
       "title": "Multi-Channel YouTube Content Agent",
-      "kicker": "Private repo · walkthrough on request",
+      "kicker": "Private repo · demo on request",
       "summary": "265 videos published unattended on 4 channels since May 2026, 97% of runs succeeding.",
       "description": "A 7-stage pipeline running on my own Linux server since May 2026 across 4 channels: trend discovery, research, scriptwriting, neural TTS, video assembly and scheduled uploads. As of Nov 16, 2026 it has published 265 videos from 272 runs (97%), with per-channel failure isolation and alerts that fall back from Discord to Telegram to email. Private repo.",
       "tags": [
@@ -243,7 +243,8 @@
       ],
       "color": "#ff5a36",
       "short": "YouTube Content Agent",
-      "featured": true
+      "featured": true,
+      "demoRequest": "mailto:woooj02@gmail.com?subject=Demo%20request%3A%20YouTube%20Content%20Agent"
     },
     {
       "id": "mlflow-26959",
@@ -281,7 +282,7 @@
       ],
       "image": "/img/projects/waive.jpg",
       "github": "https://github.com/woooj02/waive",
-      "live": "https://waive.91.99.162.43.sslip.io",
+      "live": "https://waive.keepsrunning.com",
       "ratio": 0.625,
       "featured": true
     },
@@ -327,7 +328,7 @@
       ],
       "image": "/img/projects/encore.jpg",
       "github": "https://github.com/woooj02/YouCam-Hackathon",
-      "live": "https://encore.91.99.162.43.sslip.io",
+      "live": "https://encore.keepsrunning.com",
       "video": "https://youtu.be/01_CWZvpYu4",
       "ratio": 0.6667,
       "featured": true
@@ -350,7 +351,7 @@
       ],
       "image": "/img/projects/receipt.jpg",
       "github": "https://github.com/woooj02/receipt",
-      "live": "https://receipt.91.99.162.43.sslip.io",
+      "live": "https://receipt.keepsrunning.com",
       "video": "https://youtu.be/h0lgcsNLXpg",
       "ratio": 0.625,
       "featured": true
@@ -397,7 +398,7 @@
       ],
       "image": "/img/projects/memory-lane.jpg",
       "github": "https://github.com/woooj02/memory-lane",
-      "live": "https://memory-lane.91.99.162.43.sslip.io",
+      "live": "https://memory-lane.keepsrunning.com",
       "video": "https://www.youtube.com/watch?v=0nj9_PJXPXk",
       "ratio": 0.5633,
       "featured": true
@@ -443,12 +444,13 @@
       ],
       "image": "/img/projects/market-terminal.jpg",
       "note": "Private repo: walkthrough on request.",
-      "ratio": 0.625
+      "ratio": 0.625,
+      "demoRequest": "mailto:woooj02@gmail.com?subject=Demo%20request%3A%20Market%20Terminal"
     },
     {
       "id": "job-agent",
       "title": "Autonomous Job Application Agent",
-      "kicker": "Private repo · walkthrough on request",
+      "kicker": "Private repo · demo on request",
       "summary": "Scrapes 6 job boards, scores fit with guardrails, tailors each application.",
       "description": "Scrapes 6 job-board APIs, LLM-scores relevance against a typed profile with hard-rejection guardrails, and renders ATS-tailored resume and cover letter PDFs deterministically, so the model cannot invent experience. Cron-driven on cloud Linux. Private repo.",
       "tags": [
@@ -462,12 +464,13 @@
         "AI Agents"
       ],
       "color": "#dcebdf",
-      "short": "Job Application Agent"
+      "short": "Job Application Agent",
+      "demoRequest": "mailto:woooj02@gmail.com?subject=Demo%20request%3A%20Job%20Application%20Agent"
     },
     {
       "id": "grounded-apps",
       "title": "Grounded AI Apps — Onsite · Keyed · Runsheet · Shortlist",
-      "kicker": "Private repo · walkthrough on request",
+      "kicker": "Private repo · demo on request",
       "summary": "Four small AI products, each built around one rule that stops hallucination.",
       "description": "Four small AI products, each built around one rule that stops the model from making things up. They include a site assistant that declines rather than cites a source it never retrieved, and document-to-table extraction with per-field confidence and human review. 660+ tests across the four. Private repos.",
       "tags": [
@@ -481,12 +484,13 @@
         "AI Agents"
       ],
       "color": "#2d2370",
-      "short": "Grounded AI Apps"
+      "short": "Grounded AI Apps",
+      "demoRequest": "mailto:woooj02@gmail.com?subject=Demo%20request%3A%20Grounded%20AI%20Apps"
     },
     {
       "id": "lumen",
       "title": "Lumen — Automated Data-Analysis Dashboard",
-      "kicker": "Private repo · walkthrough on request",
+      "kicker": "Private repo · demo on request",
       "summary": "Upload a dataset, get KPIs, insights, charts and anomaly screening.",
       "description": "Upload any dataset and get KPIs, plain-English insights, charts and Isolation Forest anomaly screening. It has a SQL sandbox and a leak-free cross-validated AutoML pipeline, and the pure-function engine is fully covered by pytest. Private repo.",
       "tags": [
@@ -499,7 +503,8 @@
       "categories": [
         "Data & Quant"
       ],
-      "color": "#f1e6d2"
+      "color": "#f1e6d2",
+      "demoRequest": "mailto:woooj02@gmail.com?subject=Demo%20request%3A%20Lumen%20%E2%80%94%20Automated%20Data-Analysis%20Dashboard"
     },
     {
       "id": "mlflow-27287",

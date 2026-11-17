@@ -75,9 +75,13 @@ export default function Gallery({ heading, eyebrow, sub }) {
   const [params, setParams] = useSearchParams();
   const active = params.get("c") || "All";
   const openId = params.get("p");
-  const projects = data.projects;
-  const shown = active === "All" ? projects : projects.filter((p) => p.categories.includes(active));
-  const open = projects.find((p) => p.id === openId);
+  const projects = data.projects.filter((p) => !p.earlier);
+  const earlier = { ...data.earlierWork, items: data.projects.filter((p) => p.earlier) };
+  const shown =
+    active === "All"
+      ? [...projects.filter((p) => p.featured), earlier]
+      : projects.filter((p) => p.categories.includes(active));
+  const open = openId === earlier.id ? earlier : projects.find((p) => p.id === openId);
   const columns = layout(shown, useColumnCount());
 
   const update = (key, value) => {
@@ -92,7 +96,10 @@ export default function Gallery({ heading, eyebrow, sub }) {
     return () => { document.body.style.overflow = ""; };
   }, [open]);
 
-  const count = (c) => (c === "All" ? projects.length : projects.filter((p) => p.categories.includes(c)).length);
+  const count = (c) =>
+    c === "All"
+      ? data.projects.length
+      : projects.filter((p) => p.categories.includes(c)).length;
 
   return (
     <section id="projects" className="gallery--section">

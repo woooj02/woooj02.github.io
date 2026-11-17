@@ -61,6 +61,17 @@ function Navbar() {
           ))}
           <li>
             <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="navbar--content navbar--resume"
+              onClick={closeMenu}
+            >
+              Resume ↗
+            </a>
+          </li>
+          <li>
+            <a
               href="https://github.com/woooj02"
               target="_blank"
               rel="noopener noreferrer"

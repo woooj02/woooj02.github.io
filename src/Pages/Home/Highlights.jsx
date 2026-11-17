@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 const highlights = [
+  { value: "265 videos, unattended", detail: "My content pipeline since May 2026, 97% of runs succeed", to: "/projects?p=youtube-agent" },
   { value: "Live on the App Store", detail: "Shayaak, built and operated solo", href: "https://apps.apple.com/us/app/shayaak/id6790666246" },
   { value: "Merged into MLflow", detail: "Upstream fix, PR #26959", href: "https://github.com/mlflow/mlflow/pull/26959" },
   { value: "9 hackathon builds", detail: "Oct–Nov 2026, all with public code", to: "/projects?c=Hackathons" },
-  { value: "Founder, Keeps Running LLC", detail: "Automation built for small businesses", href: "https://keepsrunning.com" },
 ];
 
 export default function Highlights() {

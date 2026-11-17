@@ -39,6 +39,23 @@ export default function ProjectModal({ item, onClose }) {
           <p className="modal--kicker">{item.kicker}</p>
           <h2 id="modal-title" className="modal--title">{item.title}</h2>
           <p className="modal--description">{item.description}</p>
+          {item.items && (
+            <ul className="modal--list">
+              {item.items.map((sub) => (
+                <li key={sub.id}>
+                  <div>
+                    <span className="modal--list-title">{tileTitle(sub)}</span>
+                    <span className="modal--list-summary">{sub.summary}</span>
+                  </div>
+                  {sub.github && (
+                    <a href={sub.github} target="_blank" rel="noopener noreferrer" className="card--link">
+                      Code ↗
+                    </a>
+                  )}
+                </li>
+              ))}
+            </ul>
+          )}
           {item.tags.length > 0 && (
             <div className="card--tags">
               {item.tags.map((tag) => (
@@ -48,11 +65,11 @@ export default function ProjectModal({ item, onClose }) {
           )}
           <ProjectLinks item={item} />
           {item.note && <p className="card--note">{item.note}</p>}
-          <div className="modal--cats">
+          {item.categories.length > 0 && <div className="modal--cats">
             {item.categories.map((c) => (
               <span key={c}>{c}</span>
             ))}
-          </div>
+          </div>}
         </div>
       </article>
     </div>

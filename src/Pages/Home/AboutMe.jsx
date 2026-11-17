@@ -23,8 +23,8 @@ export default function AboutMe() {
             What sets my work apart is that I operate what I build. My projects don't
             end at a working demo — they get deployed to my own VPS infrastructure with
             nginx, systemd services, scheduled jobs, structured logging, alerting, and
-            nightly backups, and then they keep running. A content pipeline has published
-            unattended across four channels since May 2026, and a wellness app I built is
+            nightly backups, and then they keep running. A content pipeline has published 265
+            videos unattended across four channels since May 2026, and a wellness app I built is
             live on the web and on the iOS App Store. I'm also building Keeps Running, a
             multi-agent front-desk platform for small offices, as founder of Keeps
             Running LLC. Between October and November 2026 I shipped nine solo hackathon

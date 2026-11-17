@@ -1,5 +1,12 @@
 [
   {
+    "slug": "agent-that-cannot-act-alone",
+    "title": "The Model Decides, Code Gates Every Action",
+    "date": "November 2026",
+    "tag": "AI",
+    "summary": "How the Keeps Running front-desk agent keeps a bad reply from ever reaching a real person: typed model output, four possible outcomes, and plain-code rules every reply must pass."
+  },
+  {
     "slug": "blog-without-a-backend",
     "title": "A Blog With No Backend: Markdown, React, and GitHub Pages",
     "date": "July 2026",

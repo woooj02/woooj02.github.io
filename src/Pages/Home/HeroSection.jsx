@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section id="heroSection" className="hero--section">
       <p className="hero--eyebrow">
         <span className="hero--dot" aria-hidden="true" />
-        Software engineer · Denver, CO
+        AI engineer · Denver, CO
       </p>
       <h1 className="hero--title">
         Software that

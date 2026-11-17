@@ -116,7 +116,6 @@
     "Vision & XR",
     "Data & Quant",
     "Open Source",
-    "Systems & Embedded",
     "Hackathons"
   ],
   "projects": [
@@ -145,7 +144,8 @@
       "live": "https://shayaak.com",
       "appstore": "https://apps.apple.com/us/app/shayaak/id6790666246",
       "note": "Private repo (commercial product): architecture walkthrough on request.",
-      "ratio": 0.625
+      "ratio": 0.625,
+      "featured": true
     },
     {
       "id": "keepsrunning",
@@ -170,7 +170,8 @@
       "live": "https://keepsrunning.com",
       "liveLabel": "keepsrunning.com",
       "note": "Private repo: live test instance, walkthrough on request.",
-      "ratio": 0.625
+      "ratio": 0.625,
+      "featured": true
     },
     {
       "id": "sandbox-city",
@@ -194,29 +195,8 @@
       "image": "/img/projects/sandbox-city.jpg",
       "github": "https://github.com/woooj02/sandbox_city",
       "live": "https://sandbox-city.keepsrunning.com",
-      "ratio": 0.625
-    },
-    {
-      "id": "hand-duel",
-      "title": "Hand Duel: Borrowlight",
-      "kicker": "Meta VR Start Developer Competition · Nov 2026",
-      "summary": "Hands-only Quest arcade: bend a ribbon of light, steal your rival's points.",
-      "description": "A seated, hands-only Quest arcade: bend a shared ribbon of light, steal your rival's points, and leave them the route. Unity/OpenXR, deterministic rules, 80 tests. Solo Unity 6 build; the same deterministic C# rule engine drives players, the bot and the tests (80 EditMode tests, 21 simulated flows). 26-joint hand input with pinch hysteresis, and all meshes and UI generated in code. Physically tested on Quest 2.",
-      "tags": [
-        "Unity",
-        "C#",
-        "OpenXR",
-        "Quest hand tracking"
-      ],
-      "categories": [
-        "Vision & XR",
-        "Hackathons"
-      ],
-      "image": "/img/projects/hand-duel.jpg",
-      "github": "https://github.com/woooj02/hand-duel",
-      "live": "https://www.meta.com/s/4ykAGmxTN",
-      "liveLabel": "Play on Quest",
-      "ratio": 0.5633
+      "ratio": 0.625,
+      "featured": true
     },
     {
       "id": "woundtrace",
@@ -241,7 +221,29 @@
       "github": "https://github.com/woooj02/woundtrace",
       "live": "https://asme326si3qdbv4raxgm4fbbge0fohve.lambda-url.us-east-1.on.aws/",
       "video": "https://youtu.be/AAn2KQZTjbw",
-      "ratio": 0.6667
+      "ratio": 0.6667,
+      "featured": true
+    },
+    {
+      "id": "youtube-agent",
+      "title": "Multi-Channel YouTube Content Agent",
+      "kicker": "Private repo · walkthrough on request",
+      "summary": "265 videos published unattended on 4 channels since May 2026, 97% of runs succeeding.",
+      "description": "A 7-stage pipeline running on my own Linux server since May 2026 across 4 channels: trend discovery, research, scriptwriting, neural TTS, video assembly and scheduled uploads. As of Nov 16, 2026 it has published 265 videos from 272 runs (97%), with per-channel failure isolation and alerts that fall back from Discord to Telegram to email. Private repo.",
+      "tags": [
+        "Python",
+        "Gemini",
+        "Tavily",
+        "Edge TTS",
+        "ffmpeg",
+        "YouTube API"
+      ],
+      "categories": [
+        "AI Agents"
+      ],
+      "color": "#ff5a36",
+      "short": "YouTube Content Agent",
+      "featured": true
     },
     {
       "id": "mlflow-26959",
@@ -258,7 +260,53 @@
       "repo": "mlflow/mlflow",
       "github": "https://github.com/mlflow/mlflow/pull/26959",
       "githubLabel": "View PR",
-      "short": "MLflow: Mistral tool traces"
+      "short": "MLflow: Mistral tool traces",
+      "featured": true
+    },
+    {
+      "id": "waive",
+      "title": "Waive",
+      "kicker": "Nebius × NVIDIA Global AI Hackathon · Oct 2026",
+      "summary": "NVIDIA Nemotron writes each Colorado hospital's charity-care policy as formal logic; the Z3 theorem prover checks it against state law and 501(r) and returns the exact household or day where it falls short.",
+      "description": "NVIDIA Nemotron writes each Colorado hospital's charity-care policy as formal logic; the Z3 theorem prover checks it against state law and 501(r) and returns the exact household or day where it falls short.",
+      "tags": [
+        "Python",
+        "Nemotron",
+        "Z3 SMT",
+        "FastAPI"
+      ],
+      "categories": [
+        "AI Agents",
+        "Hackathons"
+      ],
+      "image": "/img/projects/waive.jpg",
+      "github": "https://github.com/woooj02/waive",
+      "live": "https://waive.91.99.162.43.sslip.io",
+      "ratio": 0.625,
+      "featured": true
+    },
+    {
+      "id": "hand-duel",
+      "title": "Hand Duel: Borrowlight",
+      "kicker": "Meta VR Start Developer Competition · Nov 2026",
+      "summary": "Hands-only Quest arcade: bend a ribbon of light, steal your rival's points.",
+      "description": "A seated, hands-only Quest arcade: bend a shared ribbon of light, steal your rival's points, and leave them the route. Unity/OpenXR, deterministic rules, 80 tests. Solo Unity 6 build; the same deterministic C# rule engine drives players, the bot and the tests (80 EditMode tests, 21 simulated flows). 26-joint hand input with pinch hysteresis, and all meshes and UI generated in code. Physically tested on Quest 2.",
+      "tags": [
+        "Unity",
+        "C#",
+        "OpenXR",
+        "Quest hand tracking"
+      ],
+      "categories": [
+        "Vision & XR",
+        "Hackathons"
+      ],
+      "image": "/img/projects/hand-duel.jpg",
+      "github": "https://github.com/woooj02/hand-duel",
+      "live": "https://www.meta.com/s/4ykAGmxTN",
+      "liveLabel": "Play on Quest",
+      "ratio": 0.5633,
+      "featured": true
     },
     {
       "id": "encore",
@@ -281,7 +329,8 @@
       "github": "https://github.com/woooj02/YouCam-Hackathon",
       "live": "https://encore.91.99.162.43.sslip.io",
       "video": "https://youtu.be/01_CWZvpYu4",
-      "ratio": 0.6667
+      "ratio": 0.6667,
+      "featured": true
     },
     {
       "id": "receipt",
@@ -303,28 +352,55 @@
       "github": "https://github.com/woooj02/receipt",
       "live": "https://receipt.91.99.162.43.sslip.io",
       "video": "https://youtu.be/h0lgcsNLXpg",
-      "ratio": 0.625
+      "ratio": 0.625,
+      "featured": true
     },
     {
-      "id": "waive",
-      "title": "Waive",
-      "kicker": "Nebius × NVIDIA Global AI Hackathon · Oct 2026",
-      "summary": "NVIDIA Nemotron writes each Colorado hospital's charity-care policy as formal logic; the Z3 theorem prover checks it against state law and 501(r) and returns the exact household or day where it falls short.",
-      "description": "NVIDIA Nemotron writes each Colorado hospital's charity-care policy as formal logic; the Z3 theorem prover checks it against state law and 501(r) and returns the exact household or day where it falls short.",
+      "id": "saathi",
+      "title": "Saathi",
+      "kicker": "Build With AI · Oct 2026",
+      "summary": "A patient who doesn't speak English fills a clinic's English intake PDF in Nepali, by voice. The clinic gets its own PDF back, filled in English.",
+      "description": "A patient who doesn't speak English fills a clinic's English intake PDF in Nepali, by voice. The clinic gets its own PDF back, filled in English.",
       "tags": [
         "Python",
-        "Nemotron",
-        "Z3 SMT",
-        "FastAPI"
+        "Gemini",
+        "PyMuPDF",
+        "Voice AI"
+      ],
+      "categories": [
+        "Apps",
+        "Hackathons"
+      ],
+      "image": "/img/projects/saathi.jpg",
+      "github": "https://github.com/woooj02/saathi",
+      "live": "https://saathi.91.99.162.43.sslip.io/f/sample",
+      "video": "https://youtu.be/gGV9f4GBplA",
+      "ratio": 0.5983,
+      "featured": true
+    },
+    {
+      "id": "memory-lane",
+      "title": "Memory Lane + bee-cli-python",
+      "kicker": "Amazon Build, Ship, Shape · Oct 2026",
+      "summary": "Evening memory practice in Nepali for a parent, built from what her Bee wearable heard that day and served to Alexa+ as an MCP server. Also includes the open-source Python SDK it needed.",
+      "description": "Evening memory practice in Nepali for a parent, built from what her Bee wearable heard that day and served to Alexa+ as an MCP server. Also includes the open-source Python SDK it needed.",
+      "tags": [
+        "Python",
+        "MCP",
+        "Claude",
+        "Alexa+"
       ],
       "categories": [
         "AI Agents",
+        "Apps",
         "Hackathons"
       ],
-      "image": "/img/projects/waive.jpg",
-      "github": "https://github.com/woooj02/waive",
-      "live": "https://waive.91.99.162.43.sslip.io",
-      "ratio": 0.625
+      "image": "/img/projects/memory-lane.jpg",
+      "github": "https://github.com/woooj02/memory-lane",
+      "live": "https://memory-lane.91.99.162.43.sslip.io",
+      "video": "https://www.youtube.com/watch?v=0nj9_PJXPXk",
+      "ratio": 0.5633,
+      "featured": true
     },
     {
       "id": "accessibility-automation",
@@ -349,51 +425,6 @@
       "ratio": 0.6667
     },
     {
-      "id": "saathi",
-      "title": "Saathi",
-      "kicker": "Build With AI · Oct 2026",
-      "summary": "A patient who doesn't speak English fills a clinic's English intake PDF in Nepali, by voice. The clinic gets its own PDF back, filled in English.",
-      "description": "A patient who doesn't speak English fills a clinic's English intake PDF in Nepali, by voice. The clinic gets its own PDF back, filled in English.",
-      "tags": [
-        "Python",
-        "Gemini",
-        "PyMuPDF",
-        "Voice AI"
-      ],
-      "categories": [
-        "Apps",
-        "Hackathons"
-      ],
-      "image": "/img/projects/saathi.jpg",
-      "github": "https://github.com/woooj02/saathi",
-      "live": "https://saathi.91.99.162.43.sslip.io/f/sample",
-      "video": "https://youtu.be/gGV9f4GBplA",
-      "ratio": 0.5983
-    },
-    {
-      "id": "memory-lane",
-      "title": "Memory Lane + bee-cli-python",
-      "kicker": "Amazon Build, Ship, Shape · Oct 2026",
-      "summary": "Evening memory practice in Nepali for a parent, built from what her Bee wearable heard that day and served to Alexa+ as an MCP server. Also includes the open-source Python SDK it needed.",
-      "description": "Evening memory practice in Nepali for a parent, built from what her Bee wearable heard that day and served to Alexa+ as an MCP server. Also includes the open-source Python SDK it needed.",
-      "tags": [
-        "Python",
-        "MCP",
-        "Claude",
-        "Alexa+"
-      ],
-      "categories": [
-        "AI Agents",
-        "Apps",
-        "Hackathons"
-      ],
-      "image": "/img/projects/memory-lane.jpg",
-      "github": "https://github.com/woooj02/memory-lane",
-      "live": "https://memory-lane.91.99.162.43.sslip.io",
-      "video": "https://www.youtube.com/watch?v=0nj9_PJXPXk",
-      "ratio": 0.5633
-    },
-    {
       "id": "market-terminal",
       "title": "Market Terminal — Quant Research Platform",
       "kicker": "Private · quant research platform",
@@ -413,26 +444,6 @@
       "image": "/img/projects/market-terminal.jpg",
       "note": "Private repo: walkthrough on request.",
       "ratio": 0.625
-    },
-    {
-      "id": "youtube-agent",
-      "title": "Multi-Channel YouTube Content Agent",
-      "kicker": "Private repo · walkthrough on request",
-      "summary": "7-stage content pipeline, unattended on 4 channels since May 2026.",
-      "description": "A 7-stage pipeline that has run unattended on cloud Linux since May 2026 across 4 channels: trend discovery, research, scriptwriting, neural TTS, video assembly and scheduled uploads. It published 147 of 152 attempts (~97%) at the August audit, with per-channel failure isolation and multi-fallback alerts. Private repo.",
-      "tags": [
-        "Python",
-        "Gemini",
-        "Tavily",
-        "Edge TTS",
-        "ffmpeg",
-        "YouTube API"
-      ],
-      "categories": [
-        "AI Agents"
-      ],
-      "color": "#ff5a36",
-      "short": "YouTube Content Agent"
     },
     {
       "id": "job-agent",
@@ -541,7 +552,8 @@
       ],
       "color": "#d6e4ff",
       "github": "https://github.com/woooj02/supply-chain-analytics",
-      "short": "Supply Chain Analytics"
+      "short": "Supply Chain Analytics",
+      "earlier": true
     },
     {
       "id": "taskforge",
@@ -561,7 +573,8 @@
         "Systems & Embedded"
       ],
       "color": "#1f2937",
-      "github": "https://github.com/woooj02/taskforge-platform"
+      "github": "https://github.com/woooj02/taskforge-platform",
+      "earlier": true
     },
     {
       "id": "resume-tailor",
@@ -579,7 +592,8 @@
         "Apps"
       ],
       "color": "#ffdbe5",
-      "github": "https://github.com/woooj02/resume-tailor"
+      "github": "https://github.com/woooj02/resume-tailor",
+      "earlier": true
     },
     {
       "id": "mars-rover",
@@ -598,7 +612,8 @@
       "categories": [
         "Systems & Embedded"
       ],
-      "color": "#c2410c"
+      "color": "#c2410c",
+      "earlier": true
     },
     {
       "id": "smart-home",
@@ -616,7 +631,8 @@
         "Systems & Embedded"
       ],
       "color": "#e4edcf",
-      "github": "https://github.com/woooj02/Smart-Home-Network"
+      "github": "https://github.com/woooj02/Smart-Home-Network",
+      "earlier": true
     },
     {
       "id": "web-page-rank",
@@ -632,7 +648,8 @@
       "categories": [
         "Data & Quant"
       ],
-      "color": "#4338ca"
+      "color": "#4338ca",
+      "earlier": true
     },
     {
       "id": "battleship",
@@ -649,7 +666,19 @@
         "Systems & Embedded"
       ],
       "color": "#0c4a6e",
-      "github": "https://github.com/woooj02/Battleship"
+      "github": "https://github.com/woooj02/Battleship",
+      "earlier": true
     }
-  ]
+  ],
+  "earlierWork": {
+    "id": "earlier-work",
+    "title": "Earlier work",
+    "short": "Earlier work",
+    "kicker": "University and early projects",
+    "color": "#e9e6dc",
+    "summary": "Seven more projects: data analytics, microservices, embedded C++, a Mars rover and more.",
+    "description": "Earlier and university projects. Each one links to its code where the code is public.",
+    "tags": [],
+    "categories": []
+  }
 }

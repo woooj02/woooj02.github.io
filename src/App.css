@@ -221,8 +221,10 @@ section {
 .navbar--content:hover { color: var(--text); background: rgba(18, 18, 18, 0.05); }
 .navbar--active-content { color: var(--text); background: rgba(18, 18, 18, 0.07); }
 
-.navbar--github { background: var(--ink); color: #fff; margin-left: 8px; padding: 8px 16px; }
-.navbar--github:hover { background: #2a2a2a; color: #fff; }
+.navbar--resume { background: var(--ink); color: #fff; margin-left: 8px; padding: 8px 16px; }
+.navbar--resume:hover { background: #2a2a2a; color: #fff; }
+.navbar--github { border: 1px solid var(--border-strong); padding: 7px 15px; }
+.navbar--github:hover { border-color: var(--ink); }
 
 .nav__hamburger {
   display: none;
@@ -506,6 +508,12 @@ section {
 .modal--cats { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--border); }
 .modal--cats span { font-size: 12.5px; color: var(--faint); }
 .modal--cats span + span::before { content: "·"; margin-right: 6px; }
+.modal--list { list-style: none; margin: 4px 0 8px; padding: 0; }
+.modal--list li { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 0; border-top: 1px solid var(--border); }
+.modal--list li:first-child { border-top: 0; }
+.modal--list-title { display: block; font-weight: 650; font-size: 15px; }
+.modal--list-summary { display: block; color: var(--muted, #5c5c57); font-size: 14px; margin-top: 2px; line-height: 1.45; }
+.modal--list .card--link { flex-shrink: 0; }
 
 /* ============================================================
    About + skills
@@ -797,7 +805,7 @@ section {
   .navbar--items .navbar--content { font-size: 22px; }
 
   .hero--section { padding-top: 150px; padding-bottom: 80px; }
-  .navbar--github { margin-left: 0; }
+  .navbar--resume { margin-left: 0; }
 
   .highlights { grid-template-columns: 1fr 1fr; }
   .masonry { gap: 22px; }

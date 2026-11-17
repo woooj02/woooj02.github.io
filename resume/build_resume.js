@@ -55,7 +55,7 @@ const children = [
   new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 0, after: 80 }, children: [
     tr("woooj02@gmail.com | Aurora, CO | "), link("Portfolio", "https://woooj02.github.io"), tr(" | "),
     link("GitHub", "https://github.com/woooj02"), tr(" | "),
-    link("LinkedIn", "https://www.linkedin.com/in/aryan-neopane"),
+    link("LinkedIn", "https://www.linkedin.com/in/aryan-neopane-1b92b1258"),
   ] }),
   line([tr(
     "AI Engineer who builds AI agent systems and runs them in production on servers I administer. My content " +

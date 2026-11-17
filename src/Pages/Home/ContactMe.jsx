@@ -24,13 +24,13 @@ export default function ContactMe() {
           <span className="contact--card-value">github.com/woooj02</span>
         </a>
         <a
-          href="https://www.linkedin.com/in/aryan-neopane"
+          href="https://www.linkedin.com/in/aryan-neopane-1b92b1258"
           target="_blank"
           rel="noopener noreferrer"
           className="contact--card"
         >
           <span className="contact--card-label">LinkedIn</span>
-          <span className="contact--card-value">linkedin.com/in/aryan-neopane</span>
+          <span className="contact--card-value">linkedin.com/in/aryan-neopane-1b92b1258</span>
         </a>
       </div>
     </section>
